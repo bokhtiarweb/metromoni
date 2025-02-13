@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ul.menu li > a{
+    color: #ffffff;
+}
+ul.menu li > a.active{
+    color: #fff4a9 !important;
+    background-color: transparent !important;
+}
+ul.menu li > a.active, ul.menu li > a:focus, ul.menu li > a:hover{
+    background-color: transparent !important;
+}
+.activities_me, .activities_other{
+    font-size: 16px;
+}
+
+.myhome_dropdown, .search_dropdown, .inbox_dropdown, .left_profile_dropdown, .right_profile_dropdown{
+    font-size: 14px !important;
+    border-right: #fff4a9 !;
+}
+
+ul.myhome_dropdown li a, ul.search_dropdown li a, ul.inbox_dropdown li a, .inbox_dropdown, .left_profile_dropdown li a, .right_profile_dropdown li a{
+    color: rgba(77, 76, 76, 0.952) !important;
+}
+/* Top slider controller */
+/* .modal-box{
+    width: auto !important;
+    height: auto !important;
+} */
+
+/* Big slider controller */
+.bigSwipper > .swiper-button-next{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+.bigSwipper > .swiper-button-next::before{
+    display: block;
+    clear: both;
+    content: 'next';
+    position: absolute;
+    top: 8px;
+    right: 22px;
+    @media screen and (max-width: 768px){
+    display: block;
+    clear: both;
+    content: '';
+    }
+
+}
+.bigSwipper > .swiper-button-prev{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    left: 85%;
+}
+
+.bigSwipper > .swiper-button-prev::before{
+    display: block;
+    clear: both;
+    content: 'Prev';
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    left: 90%;
+    @media screen and (max-width: 768px){
+    display: block;
+    clear: both;
+    content: '';
+    }
+}
+.bigSwipper > .swiper-button-next::after, .bigSwipper > .swiper-button-prev::after{
+    font-size: 14px !important;
+    @media screen and (max-width: 768px){
+        font-size: 20px !important;
+        font-weight: bolder !important;
+        margin-top: 60px;
+    }
+}

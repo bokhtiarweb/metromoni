@@ -1,0 +1,31 @@
+import TopSlider from "./Sliders/TopSlider";
+import BigSlider from "./Sliders/BigSlider";
+import Banner from "./Shared/Banner";
+const bg2 = "/daily7-logo.png";
+
+export default function DailyMatches() {
+  return (
+    <div>
+      {/* Banner */}
+      <Banner></Banner>
+
+      <div className="grid sm:grid-cols-1 md:grid-cols-3 md:gap-2 items-center md:mt-6">
+        <div className="col-span-1 sm:w-[50%] sm:mb-8 md:mb-0 md:w-full mx-auto">
+          <div
+            className={`bg-no-repeat sm:h-[35px]`}
+            style={{ backgroundImage: `url(${bg2})` }}
+          ></div>
+        </div>
+        {/* Slider */}
+        <TopSlider></TopSlider>
+      </div>
+
+      <div className="bg-gray-50 border border-grey-500 px-2 mt-8">
+        {/* Big Slider */}
+        <div>
+          <BigSlider></BigSlider>
+        </div>
+      </div>
+    </div>
+  );
+}
