@@ -52,7 +52,7 @@ export default function BigSlider() {
             } flex sm:flex-col`}
           >
             {/* Header section start here */}
-            <div className="flex">
+            <div className="sm:flex-wrap md:flex">
               {/* ProfileImage slider */}
               <div className="border border-grey-50 h-fit">
                 <ProfileImageSlider></ProfileImageSlider>
@@ -122,55 +122,56 @@ export default function BigSlider() {
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* About person*/}
-            <div className="md:flex md:mx-auto border-b-2 border-dotted md:-mt-16 md:ml-[150px] mb-8">
-              {/* left div */}
-              <div className="overflow-x-auto">
-                <table className="table table-zebra text-sm">
-                  <tbody>
-                    {/* row 1 */}
-                    <tr>
-                      <td>Age, Height</td>
-                      <td>20 yrs, 5 ft 4 in / 162 cm</td>
-                    </tr>
-                    {/* row 2 */}
-                    <tr>
-                      <td>Education</td>
-                      <td>Higher Secondary / Secondary</td>
-                    </tr>
-                    {/* row 3 */}
-                    <tr>
-                      <td>Location</td>
-                      <td>Bangladesh</td>
-                    </tr>
-                  </tbody>
-                </table>
+              {/* About person start*/}
+              <div className="md:flex border-b-2 border-dotted sm:mt-6 sm:ml-3 md:mt-2 md:ml-3 mb-8 sm:w-full md:w-fit lg:mx-auto lg:-mt-24">
+                {/* left div */}
+                <div className="overflow-x-auto">
+                  <table className="table table-zebra text-sm">
+                    <tbody>
+                      {/* row 1 */}
+                      <tr>
+                        <td>Age, Height</td>
+                        <td>20 yrs, 5 ft 4 in / 162 cm</td>
+                      </tr>
+                      {/* row 2 */}
+                      <tr>
+                        <td>Education</td>
+                        <td>Higher Secondary / Secondary</td>
+                      </tr>
+                      {/* row 3 */}
+                      <tr>
+                        <td>Location</td>
+                        <td>Bangladesh</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                {/* right div */}
+                <div className="overflow-x-auto md:ml-10">
+                  <table className="table table-zebra text-sm">
+                    <tbody>
+                      {/* row 1 */}
+                      <tr>
+                        <td>Religion</td>
+                        <td>Islam</td>
+                      </tr>
+                      {/* row 2 */}
+                      <tr>
+                        <td>Sect</td>
+                        <td>Sunni (Sect No Bar)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-              {/* right div */}
-              <div className="overflow-x-auto md:ml-10">
-                <table className="table table-zebra text-sm">
-                  <tbody>
-                    {/* row 1 */}
-                    <tr>
-                      <td>Religion</td>
-                      <td>Islam</td>
-                    </tr>
-                    {/* row 2 */}
-                    <tr>
-                      <td>Sect</td>
-                      <td>Sunni (Sect No Bar)</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              {/* About person end*/}
             </div>
             {/* Header secton end here */}
 
             <div className="grid grid-cols-5">
               {/* Left div start */}
-              <div className="col-span-1 border border-red-600 sm:hidden"></div>
+              <div className="col-span-1 sm:hidden"></div>
               {/* Right div start */}
               <div className="sm:col-span-5 md:col-span-4">
                 {/* Person info start */}

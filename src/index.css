@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.active{
+    background-color: gainsboro;
+}
 ul.menu li > a{
     color: #ffffff;
 }

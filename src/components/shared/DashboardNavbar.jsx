@@ -24,13 +24,13 @@ export default function DashboardNavbar() {
   const navLinks = (
     <>
       <div className="relative group">
-        <li className="border-r pr-2 relative group">
-          <NavLink to={"/profiledetail/myhome"} className="uppercase p-1">
+        <li className="lg:border-r sm:px-2 pr-2 relative group">
+          <NavLink to={"/profiledetail/myhome"} className="uppercase p-1 z-50">
             My home
           </NavLink>
         </li>
         {/* Dropdown (Hidden by default, shown on hover) */}
-        <div className="absolute top-[45px] left-0 w-[550px] h-auto p-4 bg-base-100 hidden group-hover:block group-hover:bg-base-100 shadow-xl">
+        <div className="absolute top-[45px] left-0 w-[550px] h-auto p-4 bg-base-100 hidden group-hover:block group-hover:bg-base-100 shadow-xl z-50">
           <div className="flex">
             <IoMdArrowDropup className="absolute -top-6 text-white text-5xl"></IoMdArrowDropup>
             <div>
@@ -74,7 +74,7 @@ export default function DashboardNavbar() {
       </div>
 
       <div className="relative group">
-        <li className="border-r px-2">
+        <li className="lg:border-r px-2">
           <NavLink to={"/profiledetail/matches"} className="uppercase p-1">
             Matches <div className="badge badge-warning -ml-1">12</div>
           </NavLink>
@@ -106,7 +106,7 @@ export default function DashboardNavbar() {
       </div>
 
       <div className="relative group">
-        <li className="border-r px-2">
+        <li className="lg:border-r px-2">
           <NavLink to={"/profiledetail/inbox"} className="uppercase p-1">
             Inbox
           </NavLink>
@@ -149,7 +149,7 @@ export default function DashboardNavbar() {
       </div>
 
       <div className="relative group">
-        <li className="border-r px-2">
+        <li className="lg:border-r px-2">
           <NavLink to={"/profiledetail/search"} className="uppercase p-1">
             Search
           </NavLink>
@@ -189,7 +189,7 @@ export default function DashboardNavbar() {
         </div>
       </div>
 
-      <li className="border-r px-2">
+      <li className="lg:border-r px-2">
         <NavLink to={"/profiledetail/dailymatches"} className="uppercase p-1">
           <FaCalendarAlt className="text-xl text-white"></FaCalendarAlt>
           Daily Matches
@@ -205,7 +205,7 @@ export default function DashboardNavbar() {
   );
 
   return (
-    <div className={`max-w-screen-lg mx-auto navbar`}>
+    <div className={`max-w-screen-lg mx-auto navbar z-50`}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -242,7 +242,7 @@ export default function DashboardNavbar() {
           </Link>
         </div>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden lg:flex z-50">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
@@ -311,7 +311,7 @@ export default function DashboardNavbar() {
               <div className="flex">
                 <IoMdArrowDropup className="absolute -top-6 right-6 text-white text-5xl"></IoMdArrowDropup>
                 <div>
-                  <ul className="left_profile_dropdown mt-4 border-r pr-2 space-y-2">
+                  <ul className="left_profile_dropdown mt-4 lg:border-r pr-2 space-y-2">
                     <li>
                       <Link to={`/myhome`}>
                         <p className="flex items-center text-gray-500">

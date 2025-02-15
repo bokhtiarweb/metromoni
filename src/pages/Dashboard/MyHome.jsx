@@ -8,7 +8,7 @@ export default function MyHome() {
   return (
     <div className="grid grid-cols-8 bg-gray-100">
       {/* Left section */}
-      <div className="col-span-2">
+      <div className="sm:col-span-3 lg:col-span-2">
         <div>
           {/* Accordian section start here */}
           <div className="join join-vertical w-full">
@@ -63,7 +63,7 @@ export default function MyHome() {
                         target="_blank"
                         className="flex justify-between py-2 px-1 border-b border-gray-400"
                       >
-                        <span>Need Time / Info</span>
+                        <span>Need Time/Info</span>
                         <div className="badge badge-primary badge-md">0</div>
                       </a>
                       <a
@@ -238,7 +238,7 @@ export default function MyHome() {
           {/* Accordian section end here */}
         </div>
         {/* Chat History */}
-        <div className="border-b border-gray-400 my-4">
+        <div className="border-b border-gray-400 my-4 pb-2">
           <a
             href="#"
             target="_blank"
@@ -260,7 +260,7 @@ export default function MyHome() {
                   <tr>
                     <td>
                       <a href="#" target="_blank">
-                        SMS Sent
+                        SMS sent
                       </a>
                     </td>
                     <td>
@@ -354,11 +354,11 @@ export default function MyHome() {
         </div>
       </div>
       {/* Right section */}
-      <div className="col-span-6">
+      <div className="sm:col-span-5 lg:col-span-6">
         {/* Section tab start here */}
         <div>
           <Tabs>
-            <TabList className={"flex fixed bg-gray-100 z-10"}>
+            <TabList className={"flex sm:flex-wrap fixed bg-gray-100 z-10"}>
               <Tab>
                 <div className="text-center">
                   <div className="badge badge-md">987,654</div>
@@ -394,8 +394,8 @@ export default function MyHome() {
             </TabList>
 
             <TabPanel>
-              <div className="py-4">
-                <div className="flex items-center gap-3 pl-2 mt-16">
+              <div className="py-4 -z-10">
+                <div className="flex sm:flex-wrap items-center gap-3 pl-2 sm:mt-32 lg:mt-16">
                   <div className="form-control">
                     <label className="cursor-pointer flex items-center gap-1">
                       <input
@@ -442,7 +442,7 @@ export default function MyHome() {
                   <div className="form-control">
                     <label>
                       <button
-                        className="p-1 border text-blue-500 rounded-md"
+                        className="p-1 border text-blue-500 rounded-md ml-2"
                         type="submit"
                       >
                         submit
@@ -516,7 +516,11 @@ export default function MyHome() {
               </div>
             </TabPanel>
             <TabPanel>
-              <h2>Any content 5</h2>
+              <div className="py-4">
+                <div className="sm:mt-32 lg:mt-16">
+                <PageContent></PageContent>
+                </div>
+              </div>
             </TabPanel>
           </Tabs>
         </div>

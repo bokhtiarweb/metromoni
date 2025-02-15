@@ -44,8 +44,8 @@ export default function Matches() {
       <Banner></Banner>
 
       {/* Main cotent start here */}
-      <div className="grid grid-cols-8 mt-4 px-2">
-        <div className="col-span-2">
+      <div className="grid grid-cols-8 sm:mt-0 lg:mt-4 px-2">
+        <div className="sm:col-span-3 lg:col-span-2">
           {/* Sort section start */}
           <div>
             <h2 className="text-lg text-gray-600 font-bold">Sort</h2>
@@ -191,7 +191,7 @@ export default function Matches() {
         </div>
 
         {/* Main cotent start here */}
-        <div className="col-span-6 ml-2">
+        <div className="sm:col-span-5 lg:col-span-6">
           <div>
             <h3 className="px-4 mb-3 text-xl font-semibold">
               Yet to be viewed profiles (343)
@@ -206,7 +206,7 @@ export default function Matches() {
                 your <a href="#">Partner preference</a>
               </p>
             </div>
-            <div className="md:flex items-center justify-between px-4">
+            <div className="flex items-center justify-between px-4">
               <div className="flex gap-3">
                 <input
                   type="checkbox"
@@ -217,7 +217,7 @@ export default function Matches() {
                 <button className="btn btn-sm text-sm">Shortlist</button>
               </div>
               <div className="flex items-center gap-3">
-                <span>View: </span>
+                <span className="sm:hidden md:block">View: </span>
                 <FaBars
                   onClick={handleLayout}
                   className={`${

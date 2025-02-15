@@ -10,7 +10,7 @@ export default function ProfileDetail() {
   
   return (
     <div className={`relative ${isSidebarOpen ? "lg:-ml-[200px]" : ""}`}>
-      <header className="bg-[#76a63f] sticky top-0 left-0 w-full shadow-md z-10">
+      <header className="bg-[#76a63f] sticky top-0 left-0 w-full shadow-md z-50">
         <DashboardNavbar className="-ml-[200px]"></DashboardNavbar>
       </header>
       <main className="max-w-screen-lg mx-auto">

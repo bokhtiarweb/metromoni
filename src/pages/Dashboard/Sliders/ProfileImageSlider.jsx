@@ -4,11 +4,11 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function ProfileImageSlider() {
   return (
-    <div className="w-36 mx-auto">
+    <div className="sm:w-fit lg:w-48 mx-auto p-4">
       <Carousel
         showArrows={true}
         showThumbs={true}
-        thumbWidth={30}
+        thumbWidth={34}
       >
         <div>
           <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="Nature 1" />

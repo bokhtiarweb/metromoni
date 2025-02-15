@@ -17,7 +17,7 @@ export default function PageContent() {
           <div>
             {/* Before profileimage slider */}
             <div className="px-2">
-              <div className="flex justify-between">
+              <div className="flex sm:flex-wrap lg:justify-between sm:space-y-4 lg:space-y-0">
                 <div>
                   <strong className="mr-2">BGD1883935</strong>
                   <span className="mr-2">|</span>
@@ -33,18 +33,18 @@ export default function PageContent() {
               </div>
             </div>
 
-            <div className="grid grid-cols-8 mt-6">
+            <div className="flex sm:flex-wrap lg:justify-between mt-4">
               {/* ProfileImage slider */}
-              <div className="col-span-2">
+              <div>
                 <div className="border border-grey-50 mx-auto h-fit">
                   <ProfileImageSlider></ProfileImageSlider>
                 </div>
               </div>
-              <div className="col-span-6 pl-2">
-                <div className="grid grid-cols-2 border-b pb-2">
-                  <div>
+              <div>
+                <div className="flex sm:flex-wrap sm:justify-center lg:justify-between border-b">
+                  <div className="sm:flex lg:grid justify-between items-center sm:mt-2">
                     <h3 className="font-bold">Jhon Henry</h3>
-                    <div className="flex items-center gap-3 mt-2">
+                    <div className="flex items-center sm:gap-2 lg:gap-3 mt-2 sm:ml-4 lg:ml-0">
                       <span>
                         <FaMapMarkerAlt></FaMapMarkerAlt>
                       </span>
@@ -54,7 +54,7 @@ export default function PageContent() {
                     </div>
                   </div>
                   {/* Mail phone no viewprofile */}
-                  <div className="flex items-center gap-4">
+                  <div className="flex sm:gap-4 sm:mt-4 lg:gap-2 items-center">
                     <div
                       className="w-10 h-10 bg-blue-400 rounded-full border flex justify-center items-center tooltip"
                       data-tip="Send Mail"
@@ -80,7 +80,7 @@ export default function PageContent() {
                       </a>
                     </div>
                     <div>
-                      <a href="#" className="flex">
+                      <a href="#" className="flex mr-2">
                         <div className="flex items-center">
                           <FaWatchmanMonitoring className="text-green-500"></FaWatchmanMonitoring>
                         </div>
@@ -128,14 +128,14 @@ export default function PageContent() {
                   </div>
                   </div>
                   {/* Interested div */}
-                  <div className="col-span-1">
+                  <div className="mr-2">
                     <div className="grid justify-start">
                       <strong className="md:mt-3">Interested in her?</strong>
                       <div className="mt-4">
                         <button className="px-2 py-[0.4rem] w-[5rem] bg-orange-600 border border-orange-600 hover:bg-orange-500 text-white font-bold text-[1rem] md:ml-2 rounded-md">
                           Yes
                         </button>
-                        <button className="px-2 w-[5rem] py-[0.4rem] hover:bg-gray-100 text-gray-500 font-bold text-[1rem] border border-gray-400 ml-2 rounded-md">
+                        <button className="px-2 w-[5rem] py-[0.4rem] hover:bg-gray-100 text-gray-500 font-bold text-[1rem] border border-gray-400 sm:mt-2 md:ml-2 lg:ml-2 rounded-md">
                           Skip
                         </button>
                       </div>
@@ -149,8 +149,6 @@ export default function PageContent() {
               </div>
             </div>
           </div>
-
-          {/* ProfileImage slider right start */}
         </div>
         {/* Header secton end here */}
       </div>
