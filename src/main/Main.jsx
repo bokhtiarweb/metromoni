@@ -10,7 +10,7 @@ export default function Main() {
         <header className='bg-base-100 fixed top-0 left-0 w-full shadow-md z-50'>
             <NavBar></NavBar>
         </header>
-        <main className='h-[100vh] pt-16'>
+        <main className='pt-16 px-4'>
             <Outlet></Outlet>
         </main>
         <footer className='bg-slate-600'>

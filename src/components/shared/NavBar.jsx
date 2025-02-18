@@ -9,7 +9,7 @@ export default function NavBar() {
     e.preventDefault();
   };
   return (
-    <div className="max-w-screen-lg mx-auto navbar border border-red-600">
+    <div className="max-w-screen-lg mx-auto navbar">
       <div className="navbar-start">
         <Link to={`/`} className="font-bold text-xl text-fuchsia-500">
           Matrimony
@@ -17,7 +17,7 @@ export default function NavBar() {
       </div>
       <div className="navbar-center hidden lg:flex"></div>
       <div className="navbar-end">
-        <span className="text-lg mr-2">Already a Member?</span>
+        <span className="sm:text-sm text-lg mr-2">Already a Member?</span>
         {/* Open the modal using */}
         <button
           className="btn btn-sm btn-success text-semibold text-white mr-2"
@@ -25,9 +25,11 @@ export default function NavBar() {
         >
           Log In
         </button>
-        <button className="btn btn-sm btn-success text-semibold text-white">
-          Register
-        </button>
+        <Link to={`/register`}>
+          <button className="btn btn-sm btn-success text-semibold text-white">
+            Register
+          </button>
+        </Link>
         <dialog
           id="my_modal_2"
           className="modal"

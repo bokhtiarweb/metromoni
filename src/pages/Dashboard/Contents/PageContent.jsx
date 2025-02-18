@@ -41,7 +41,7 @@ export default function PageContent() {
                 </div>
               </div>
               <div>
-                <div className="flex sm:flex-wrap sm:justify-center lg:justify-between border-b">
+                <div className="flex sm:flex-wrap sm:justify-center lg:justify-between border-b px-2">
                   <div className="sm:flex lg:grid justify-between items-center sm:mt-2">
                     <h3 className="font-bold">Jhon Henry</h3>
                     <div className="flex items-center sm:gap-2 lg:gap-3 mt-2 sm:ml-4 lg:ml-0">
@@ -93,7 +93,7 @@ export default function PageContent() {
                 </div>
 
                 {/* About person*/}
-                <div className="grid grid-cols-3 border-b-2 border-dotted mb-2 mt-4">
+                <div className="grid grid-cols-3 border-b-2 border-dotted mb-2 mt-4 px-2 gap-4">
                   <div className="col-span-2">
                   <div className="overflow-x-auto">
                     <table className="table table-zebra text-sm">
@@ -142,9 +142,9 @@ export default function PageContent() {
                     </div>
                   </div>
                 </div>
-                <div className="flex text-sm pt-2 pb-4">
+                <div className="flex text-sm pt-2 pb-4 px-2">
                   <span className="text-gray-400 mr-6">About her</span>
-                  <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.... <a className="text-blue-500 hover:underline" href="#" target="_blank">View profile</a></span>
+                  <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.... <a className="text-blue-500 hover:underline" href={`/profiledetail/viewprofile`} target="_blank">View profile</a></span>
                 </div>
               </div>
             </div>

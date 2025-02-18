@@ -27,11 +27,13 @@ ul.menu li > a.active, ul.menu li > a:focus, ul.menu li > a:hover{
 ul.myhome_dropdown li a, ul.search_dropdown li a, ul.inbox_dropdown li a, .inbox_dropdown, .left_profile_dropdown li a, .right_profile_dropdown li a{
     color: rgba(77, 76, 76, 0.952) !important;
 }
-/* Top slider controller */
-/* .modal-box{
-    width: auto !important;
-    height: auto !important;
-} */
+.testimonial_slider .swiper-button-prev{
+    left: 0 !important;
+}
+.testimonial_slider .swiper-button-prev::after, .testimonial_slider .swiper-button-next::after{
+    font-size: 22px !important;
+    font-weight: bold;
+}
 
 /* Big slider controller */
 .bigSwipper > .swiper-button-next{

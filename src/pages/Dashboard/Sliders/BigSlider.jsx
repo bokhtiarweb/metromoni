@@ -13,7 +13,7 @@ import "../../../index.css";
 import { FaBowlFood, FaFootball } from "react-icons/fa6";
 import PartnerPreference from "../Partners/PartnerPreference";
 import ProfileImageSlider from "./ProfileImageSlider";
-import FamilyDetailsModal from "../Shared/FamilyDetailsModal";
+import FamilyDetailsModal from "../Modals/FamilyDetailsModal";
 
 const images = [
   { id: 1, img: "https://swiperjs.com/demos/images/nature-1.jpg" },

@@ -18,6 +18,8 @@ import InterestDeclined from "../pages/Dashboard/Inbox/Declined/InterestDeclined
 import MessageDeclined from "../pages/Dashboard/Inbox/Declined/MessageDeclined";
 import Request from "../pages/Dashboard/Inbox/Request";
 import Chathistory from "../pages/Dashboard/Inbox/Chathistory";
+import ViewProfile from "../pages/Dashboard/ViewProfile";
+import Register from "../pages/Register";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "register",
+        element: <Register></Register>,
       },
     ],
   },
@@ -50,46 +56,50 @@ export const router = createBrowserRouter([
         element: <Matches></Matches>,
       },
       {
+        path: "viewprofile",
+        element: <ViewProfile></ViewProfile>,
+      },
+      {
         path: "inbox",
         element: <Inbox></Inbox>,
         children: [
           {
-            path: '',
-            element: <All></All>
+            path: "",
+            element: <All></All>,
           },
           {
-            path: 'interest',
-            element: <Interest></Interest>
+            path: "interest",
+            element: <Interest></Interest>,
           },
           {
-            path: 'message',
-            element: <Message></Message>
+            path: "message",
+            element: <Message></Message>,
           },
           {
-            path: 'accepted',
-            element: <Accepted></Accepted>
+            path: "accepted",
+            element: <Accepted></Accepted>,
           },
           {
-            path: 'all-declined',
-            element: <AllDeclined></AllDeclined>
+            path: "all-declined",
+            element: <AllDeclined></AllDeclined>,
           },
           {
-            path: 'declined-interest',
-            element: <InterestDeclined></InterestDeclined>
+            path: "declined-interest",
+            element: <InterestDeclined></InterestDeclined>,
           },
           {
-            path: 'declined-message',
-            element: <MessageDeclined></MessageDeclined>
+            path: "declined-message",
+            element: <MessageDeclined></MessageDeclined>,
           },
           {
-            path: 'request',
-            element: <Request></Request>
+            path: "request",
+            element: <Request></Request>,
           },
           {
-            path: 'chathistory',
-            element: <Chathistory></Chathistory>
+            path: "chathistory",
+            element: <Chathistory></Chathistory>,
           },
-        ]
+        ],
       },
       {
         path: "search",

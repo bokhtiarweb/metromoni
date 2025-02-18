@@ -1,22 +1,61 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const images = [
-    { id: 1, image: "https://i.ibb.co.com/h1xbRgC/singapore.png" },
-    { id: 2, image: "https://i.ibb.co.com/ySwRy0N/chile.png" },
-    { id: 3, image: "https://i.ibb.co.com/WsFFb9z/colombia.png" },
-    { id: 4, image: "https://i.ibb.co.com/kcQgsRf/canada.png" },
-    { id: 5, image: "https://i.ibb.co.com/drZTzd3/japan.png" },
-    { id: 7, image: "https://i.ibb.co.com/dQZT9Gn/china.png" },
-    { id: 8, image: "https://i.ibb.co.com/mqNmfBm/germany.png" },
-    { id: 9, image: "https://i.ibb.co.com/6RzzWnW/france.png" },
-    { id: 10, image: "https://i.ibb.co.com/0q7xhBs/united-states.png" },
-    { id: 11, image: "https://i.ibb.co.com/N6TVqpj/united-kingdom.png" },
-  ];
+  {
+    id: 1,
+    image:
+      "https://global.matrimonycdn.com/membersphoto/common/2021/01/11/02/BGD996971_iuf189_TS_2.jpg",
+  },
+  {
+    id: 2,
+    image:
+      "https://global.matrimonycdn.com/membersphoto/common/2020/12/27/18/BGD969153_qBQ587_TS_2.jpg",
+  },
+  {
+    id: 3,
+    image:
+      "https://global.matrimonycdn.com/membersphoto/common/2021/01/09/11/BGD994792_HYn27_TS_6.jpg",
+  },
+  {
+    id: 4,
+    image:
+      "https://global.matrimonycdn.com/membersphoto/common/2020/12/26/05/BGD967674_LwN054_TS_1.jpg",
+  },
+  {
+    id: 5,
+    image:
+      "https://global.matrimonycdn.com/membersphoto/common/2021/01/06/09/BGD978823_Uym356_TS_1.jpg",
+  },
+  {
+    id: 7,
+    image:
+      "https://global.matrimonycdn.com/membersphoto/common/2020/11/09/17/BGD918643_zKe81_TS_7.jpg",
+  },
+  {
+    id: 8,
+    image:
+      "https://global.matrimonycdn.com/membersphoto/common/2021/01/06/00/BGD978396_xpQ351_TS_1.jpg",
+  },
+  {
+    id: 9,
+    image:
+      "https://global.matrimonycdn.com/membersphoto/common/2020/10/22/17/BGD898718_DQI498_TS_2.jpg",
+  },
+  {
+    id: 10,
+    image:
+      "https://global.matrimonycdn.com/membersphoto/common/2021/01/05/18/BGD978111_dTJ157_TS_1.jpg",
+  },
+  {
+    id: 11,
+    image:
+      "https://global.matrimonycdn.com/membersphoto/common/2020/11/09/17/BGD918643_zKe81_TS_7.jpg",
+  },
+];
 
 export default function TopSlider() {
   return (
@@ -39,11 +78,11 @@ export default function TopSlider() {
         >
           {images.map((image, index) => (
             <SwiperSlide key={index}>
-              <div className="rounded-full lg:w-[80px]">
+              <div className="w-[6rem] h-[6rem]">
                 <img
                   src={image.image}
                   alt={`Slide ${index + 1}`}
-                  className="object-cover"
+                  className="w-[100%] h-[100%] rounded-full object-cover"
                 />
               </div>
             </SwiperSlide>

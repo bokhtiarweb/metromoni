@@ -37,7 +37,7 @@ export default function PageContentGrid() {
                     <p>Bangladesh</p>
                     <a
                       className="text-blue-600 hover:underline"
-                      href="#"
+                      href={`/profiledetail/viewprofile`}
                       target="_blank"
                     >
                       View full profile...

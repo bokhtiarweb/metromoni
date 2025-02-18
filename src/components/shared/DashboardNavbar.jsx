@@ -197,7 +197,7 @@ export default function DashboardNavbar() {
       </li>
 
       <li className="border-1 px-2">
-        <NavLink to={"/upgrade"} target="_blank" className="uppercase p-1">
+        <NavLink to={"/profiledetail/upgrade"} target="_blank" className="uppercase p-1">
           Upgrade
         </NavLink>
       </li>
