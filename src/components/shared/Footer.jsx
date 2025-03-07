@@ -19,10 +19,10 @@ export default function Footer() {
           </nav>
           <nav className="ml-4">
             <h6 className="text-xl">Help & Support</h6>
-            <a href="#">Live help</a>
-            <a href="#">Contact us</a>
-            <a href="#">Feedback</a>
-            <a href="#">FAQs</a>
+            <a href="/livehelp">Live help</a>
+            <a href="/contactus">Contact us</a>
+            <a href="/feedback">Feedback</a>
+            <a href="/faq">FAQs</a>
           </nav>
           <nav className="ml-4">
             <h6 className="text-xl">Quick link</h6>

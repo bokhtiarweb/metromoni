@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPersonShelter } from "react-icons/fa6"; // Assuming you're using React Icons
+import { FaPersonShelter } from "react-icons/fa6";
 
 export default function FamilyDetailsModal() {
   // Handle opening and closing of the modal

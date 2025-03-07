@@ -33,7 +33,7 @@ export default function PageContent() {
               </div>
             </div>
 
-            <div className="flex sm:flex-wrap lg:justify-between mt-4">
+            <div className="sm:flex-wrap flex justify-between mt-4">
               {/* ProfileImage slider */}
               <div>
                 <div className="border border-grey-50 mx-auto h-fit">
@@ -131,11 +131,11 @@ export default function PageContent() {
                   <div className="mr-2">
                     <div className="grid justify-start">
                       <strong className="md:mt-3">Interested in her?</strong>
-                      <div className="mt-4">
-                        <button className="px-2 py-[0.4rem] w-[5rem] bg-orange-600 border border-orange-600 hover:bg-orange-500 text-white font-bold text-[1rem] md:ml-2 rounded-md">
+                      <div className="mt-4 sm:flex-col">
+                        <button className="btn btn-sm bg-orange-600 border border-orange-600 hover:bg-orange-500 text-white font-bold text-[1rem] md:ml-2 rounded-md">
                           Yes
                         </button>
-                        <button className="px-2 w-[5rem] py-[0.4rem] hover:bg-gray-100 text-gray-500 font-bold text-[1rem] border border-gray-400 sm:mt-2 md:ml-2 lg:ml-2 rounded-md">
+                        <button className="btn btn-sm hover:bg-gray-100 text-gray-500 font-bold text-[1rem] border border-gray-400 sm:mt-2 md:mt-0 md:ml-2 lg:ml-2 rounded-md">
                           Skip
                         </button>
                       </div>

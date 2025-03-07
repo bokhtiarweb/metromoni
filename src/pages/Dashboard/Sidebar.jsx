@@ -5,7 +5,7 @@ import { FaArrowUp, FaMessage } from "react-icons/fa6";
 export default function Sidebar({ isOpen, setIsOpen }) {
   return (
     <div
-      className={`w-[250px] h-[100vh] bg-slate-400 fixed right-0 ${
+      className={`w-[250px] h-[100vh] bg-slate-400 fixed right-0 hidden sm:block ${
         !isOpen ? "top-[95%]" : "top-0"
       } bottom-0 z-50 transition-all duration-300`}
     >

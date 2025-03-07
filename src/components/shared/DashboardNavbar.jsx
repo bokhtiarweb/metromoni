@@ -313,7 +313,7 @@ export default function DashboardNavbar() {
                 <div>
                   <ul className="left_profile_dropdown mt-4 lg:border-r pr-2 space-y-2">
                     <li>
-                      <Link to={`/myhome`}>
+                      <Link to={`/profiledetail/editprofile`}>
                         <p className="flex items-center text-gray-500">
                           <span className="mr-2">
                             <FaEdit></FaEdit>
@@ -323,7 +323,7 @@ export default function DashboardNavbar() {
                       </Link>
                     </li>
                     <li>
-                      <Link>
+                      <Link to={`/profiledetail/editpartnerpreference`}>
                         <p className="flex items-center text-gray-500">
                           <span className="mr-2">
                             <FaUserEdit className="text-lg"></FaUserEdit>
@@ -333,7 +333,7 @@ export default function DashboardNavbar() {
                       </Link>
                     </li>
                     <li>
-                      <Link>
+                      <Link to={`/profiledetail/editprofile`}>
                         <p className="flex items-center text-gray-500">
                           <span className="mr-2">
                             <FaMobileAlt className="text-xl -ml-1"></FaMobileAlt>
@@ -343,12 +343,12 @@ export default function DashboardNavbar() {
                       </Link>
                     </li>
                     <li>
-                      <Link>
+                      <Link to={`/profiledetail/editproflebadge`}>
                         <p className="flex items-center text-gray-500">
                           <span className="mr-2">
                             <FaAward className="text-xl -ml-1"></FaAward>
                           </span>{" "}
-                          <span>Edit Partner Preference</span>
+                          <span>Add Trust Badge</span>
                         </p>
                       </Link>
                     </li>
@@ -357,7 +357,7 @@ export default function DashboardNavbar() {
                 <div>
                   <ul className="right_profile_dropdown mt-4 ml-4 space-y-2">
                     <li>
-                      <Link>
+                      <Link to={`/profiledetail/editprofile`}>
                         <p className="flex items-center text-gray-500">
                           <span className="mr-2">
                             <FaGear></FaGear>
@@ -367,7 +367,7 @@ export default function DashboardNavbar() {
                       </Link>
                     </li>
                     <li>
-                      <Link>
+                      <Link to={`/profiledetail/communicationsetting`}>
                         <p className="flex items-center text-gray-500">
                           <span className="mr-2">
                             <FaUsersGear></FaUsersGear>

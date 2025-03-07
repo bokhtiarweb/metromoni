@@ -20,6 +20,15 @@ import Request from "../pages/Dashboard/Inbox/Request";
 import Chathistory from "../pages/Dashboard/Inbox/Chathistory";
 import ViewProfile from "../pages/Dashboard/ViewProfile";
 import Register from "../pages/Register";
+import LiveHelp from "../pages/LiveHelp";
+import ContactUs from "../pages/ContactUs";
+import Feedback from "../pages/Feedback";
+import Faq from "../pages/Faq";
+import BangladeshiBrideGroom from "../pages/BangladeshiBrideGroom";
+import EditProfile from "../pages/Dashboard/EditProfile";
+import EditProfileBadge from "../pages/Dashboard/EditProfileBadge";
+import EditPartnerPreference from "../pages/Dashboard/EditPartnerPreference";
+import CommunicationSetting from "../pages/Dashboard/CommunicationSetting";
 
 export const router = createBrowserRouter([
   {
@@ -35,6 +44,26 @@ export const router = createBrowserRouter([
         path: "register",
         element: <Register></Register>,
       },
+      {
+        path: "bangladeshibridegroom",
+        element: <BangladeshiBrideGroom></BangladeshiBrideGroom>
+      },
+      {
+        path: 'livehelp',
+        element: <LiveHelp></LiveHelp>
+      },
+      {
+        path: 'contactus',
+        element: <ContactUs></ContactUs>
+      },
+      {
+        path: 'feedback',
+        element: <Feedback></Feedback>
+      },
+      {
+        path: 'faq',
+        element: <Faq></Faq>
+      }
     ],
   },
 
@@ -58,6 +87,22 @@ export const router = createBrowserRouter([
       {
         path: "viewprofile",
         element: <ViewProfile></ViewProfile>,
+      },
+      {
+        path: 'editprofile',
+        element: <EditProfile></EditProfile>
+      },
+      {
+        path: 'editproflebadge',
+        element: <EditProfileBadge></EditProfileBadge>
+      },
+      {
+        path: 'editpartnerpreference',
+        element: <EditPartnerPreference></EditPartnerPreference>
+      },
+      {
+        path: 'communicationsetting',
+        element: <CommunicationSetting></CommunicationSetting>
       },
       {
         path: "inbox",

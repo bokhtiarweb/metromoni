@@ -191,7 +191,7 @@ export default function Matches() {
         </div>
 
         {/* Main cotent start here */}
-        <div className="sm:col-span-5 lg:col-span-6 px-2">
+        <div className="sm:col-span-5 lg:col-span-6 px-2 lg:w-[760px]">
           <div>
             <h3 className="px-4 mb-3 text-xl font-semibold">
               Yet to be viewed profiles (343)

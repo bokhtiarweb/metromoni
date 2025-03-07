@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import logo from "/logo.svg";
 
 export default function NavBar() {
   const [showForgotPass, setShowForgotPass] = useState(true);
@@ -11,9 +12,16 @@ export default function NavBar() {
   return (
     <div className="max-w-screen-lg mx-auto navbar">
       <div className="navbar-start">
-        <Link to={`/`} className="font-bold text-xl text-fuchsia-500">
-          Matrimony
-        </Link>
+        <div className="flex items-center">
+          <img src={logo} alt="" className="w-[45px] h-[40px]" />
+          <Link
+            to={`/`}
+            className="font-bold flex flex-col text-xl text-fuchsia-500"
+          >
+            <span className="-mb-1 text-green-800">Bangladeshi</span>
+            <span className="-mt-1 text-red-600">Matrimony</span>
+          </Link>
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex"></div>
       <div className="navbar-end">

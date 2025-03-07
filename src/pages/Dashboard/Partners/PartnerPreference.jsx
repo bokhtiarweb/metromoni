@@ -44,111 +44,109 @@ export default function PartnerPreference() {
 
       <div>
         <div className="overflow-x-auto">
-          <div className="overflow-x-auto">
-            <table className="table">
-              <tbody>
-                {/* row 1 */}
-                <tr>
-                  <td>Marital Status - Unmarried</td>
-                  <td></td>
-                  <td>
-                    <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Age - 21 to 26 Yrs</td>
-                  <td></td>
-                  <td>
-                    <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Height - 5 ft 8 in to 6 ft 2 in</td>
-                  <td></td>
-                  <td>
-                    <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Mother Tongue - Bengali</td>
-                  <td></td>
-                  <td>
-                    <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Physical Status - Normal</td>
-                  <td></td>
-                  <td>
-                    <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Eating Habits - Halal food always</td>
-                  <td></td>
-                  <td>
-                    <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Drinking Habits - Doesn't matter</td>
-                  <td></td>
-                  <td>
-                    <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Smoking Habits - Doesn't matter</td>
-                  <td></td>
-                  <td>
-                    <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Religion - Islam</td>
-                  <td></td>
-                  <td>
-                    <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Sect - Sunni</td>
-                  <td></td>
-                  <td>
-                    <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Education - Any</td>
-                  <td></td>
-                  <td>
-                    <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Occupation - Any</td>
-                  <td></td>
-                  <td>
-                    <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Citizenship - Any</td>
-                  <td></td>
-                  <td>
-                    <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Resident Status - Any</td>
-                  <td></td>
-                  <td>
-                    <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <table className="table">
+            <tbody>
+              {/* row 1 */}
+              <tr>
+                <td>Marital Status - Unmarried</td>
+                <td></td>
+                <td>
+                  <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
+                </td>
+              </tr>
+              <tr>
+                <td>Age - 21 to 26 Yrs</td>
+                <td></td>
+                <td>
+                  <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
+                </td>
+              </tr>
+              <tr>
+                <td>Height - 5 ft 8 in to 6 ft 2 in</td>
+                <td></td>
+                <td>
+                  <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
+                </td>
+              </tr>
+              <tr>
+                <td>Mother Tongue - Bengali</td>
+                <td></td>
+                <td>
+                  <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
+                </td>
+              </tr>
+              <tr>
+                <td>Physical Status - Normal</td>
+                <td></td>
+                <td>
+                  <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
+                </td>
+              </tr>
+              <tr>
+                <td>Eating Habits - Halal food always</td>
+                <td></td>
+                <td>
+                  <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
+                </td>
+              </tr>
+              <tr>
+                <td>Drinking Habits - Doesn't matter</td>
+                <td></td>
+                <td>
+                  <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
+                </td>
+              </tr>
+              <tr>
+                <td>Smoking Habits - Doesn't matter</td>
+                <td></td>
+                <td>
+                  <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
+                </td>
+              </tr>
+              <tr>
+                <td>Religion - Islam</td>
+                <td></td>
+                <td>
+                  <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
+                </td>
+              </tr>
+              <tr>
+                <td>Sect - Sunni</td>
+                <td></td>
+                <td>
+                  <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
+                </td>
+              </tr>
+              <tr>
+                <td>Education - Any</td>
+                <td></td>
+                <td>
+                  <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
+                </td>
+              </tr>
+              <tr>
+                <td>Occupation - Any</td>
+                <td></td>
+                <td>
+                  <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
+                </td>
+              </tr>
+              <tr>
+                <td>Citizenship - Any</td>
+                <td></td>
+                <td>
+                  <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
+                </td>
+              </tr>
+              <tr>
+                <td>Resident Status - Any</td>
+                <td></td>
+                <td>
+                  <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
