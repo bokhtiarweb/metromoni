@@ -10,6 +10,10 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+  /* .react-tabs__tab--selected{
+    background-color: #f97316e8;
+    color: #ffffff;
+  } */
 
 .active{
     background-color: gainsboro;

@@ -1,6 +1,7 @@
 import TopSlider from "./Sliders/TopSlider";
 import BigSlider from "./Sliders/BigSlider";
 import Banner from "./Shared/Banner";
+import Dailymatchslider from "../Mobile/MobileDash/Dailymatchslider";
 const bg2 = "/daily7-logo.png";
 
 export default function DailyMatches() {
@@ -28,7 +29,7 @@ export default function DailyMatches() {
       </div>
     </div>
     <div className="block sm:hidden">
-      <h2 className="text-4xl text-red-700 font-bold">Dailymatch for mobile</h2>
+      <Dailymatchslider></Dailymatchslider>
     </div>
     </>
   );

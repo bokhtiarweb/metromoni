@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Banner from "./Shared/Banner";
-import PageContent from "./Contents/PageContent";
 import { FaArrowsAltH } from "react-icons/fa";
+import MobileSearch from "../Mobile/MobileDash/MobileSearch";
 
 const options = {
   sect: ["Any", "Ahmadiyya", "Hanafi", "Shia", "Sunni"],
@@ -59,7 +59,7 @@ export default function Search() {
 
   return (
     <>
-      <div>
+      <div className="hidden sm:block">
         <div>
           <Banner></Banner>
         </div>
@@ -1812,6 +1812,9 @@ export default function Search() {
             </TabPanel>
           </Tabs>
         </div>
+      </div>
+      <div className="block sm:hidden bg-gray-100">
+        <MobileSearch></MobileSearch>
       </div>
     </>
   );

@@ -29,6 +29,8 @@ import EditProfile from "../pages/Dashboard/EditProfile";
 import EditProfileBadge from "../pages/Dashboard/EditProfileBadge";
 import EditPartnerPreference from "../pages/Dashboard/EditPartnerPreference";
 import CommunicationSetting from "../pages/Dashboard/CommunicationSetting";
+import Settings from "../pages/Dashboard/Settings";
+import PrivacySettings from "../pages/Dashboard/PrivacySettings";
 
 export const router = createBrowserRouter([
   {
@@ -101,8 +103,17 @@ export const router = createBrowserRouter([
         element: <EditPartnerPreference></EditPartnerPreference>
       },
       {
+        path: 'settings',
+        element: <Settings></Settings>
+      },
+      {
         path: 'communicationsetting',
         element: <CommunicationSetting></CommunicationSetting>
+      },
+      
+      {
+        path: 'privacySettings',
+        element: <PrivacySettings></PrivacySettings>
       },
       {
         path: "inbox",

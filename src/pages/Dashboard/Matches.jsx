@@ -39,7 +39,8 @@ export default function Matches() {
   };
 
   return (
-    <div className="my-4">
+    <>
+    <div className="my-4 hidden sm:block">
       {/* Banner */}
       <Banner></Banner>
 
@@ -271,5 +272,9 @@ export default function Matches() {
         {/* Main cotent end here */}
       </div>
     </div>
+    <div className="block sm:hidden">
+      <h2 className="text-red-700 font-bold text-5xl">Hello Metches Page</h2>
+    </div>
+    </>
   );
 }

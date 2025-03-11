@@ -1,5 +1,4 @@
 import ReceivedCard from "./ReceivedCard";
-import SentCard from "./SentCard";
 
 const users = [
   {
@@ -26,6 +25,7 @@ const users = [
 ];
 
 export default function Received({ activeTat, matched }) {
+
   return (
     <div className="p-4 bg-white">
       {users.map((user) => (

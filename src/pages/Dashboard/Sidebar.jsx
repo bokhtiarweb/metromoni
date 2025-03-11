@@ -26,7 +26,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
         </button>
         <div className="p-4 text-white">
           <p>
-            <span className="text-5xl text-red-600">sidebar</span>
+            <span className="text-5xl text-red-600 border border-red-600">sidebar</span>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
             exercitationem temporibus porro commodi suscipit mollitia ipsum odio
             dolore? Veniam incidunt fugiat minima voluptatum nostrum debitis

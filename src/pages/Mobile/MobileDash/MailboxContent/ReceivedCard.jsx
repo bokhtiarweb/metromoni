@@ -24,7 +24,7 @@ export default function ReceivedCard({ user, matched }) {
         <div className="flex items-center gap-1 bg-yellow-100">Received on 1-1-2025</div>
       </div>
       <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reiciendis modi, nemo doloribus ....</p>
+        <p className="text-[13px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reiciendis modi, nemo doloribus ....</p>
       </div>
     </div>
   );
