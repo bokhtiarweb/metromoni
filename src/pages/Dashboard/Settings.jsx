@@ -14,7 +14,18 @@ import {
 import { Link } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import AllsettingModals from "../Mobile/MobileDash/SettingModals/AllsettingModals";
+import Logout from "../Mobile/MobileDash/SettingModals/Logout";
+import BlockedProfileModal from "../Mobile/MobileDash/SettingModals/BlockedProfileModal";
+import IgnoredProfiledModal from "../Mobile/MobileDash/SettingModals/IgnoredProfiledModal";
+import CommunicationModal from "../Mobile/MobileDash/SettingModals/CommunicationModal";
+import CallPreferrencegModal from "../Mobile/MobileDash/SettingModals/CallPreferrencegModal";
+import PrivacyModal from "../Mobile/MobileDash/SettingModals/PrivacyModal";
+import ChangePasswordModal from "../Mobile/MobileDash/SettingModals/ChangePasswordModal";
+import DeactiveModal from "../Mobile/MobileDash/SettingModals/DeactiveModal";
+import DeleteProfileModal from "../Mobile/MobileDash/SettingModals/DeleteProfileModal";
+import HelpCenterModal from "../Mobile/MobileDash/SettingModals/HelpCenterModal";
+import TermConditionmodal from "../Mobile/MobileDash/SettingModals/TermConditionmodal";
+import PrivacyPolicyModal from "../Mobile/MobileDash/SettingModals/PrivacyPolicyModal";
 
 export default function Settings() {
   const [settingInfo, setSettingInfo] = useState("edit email address");
@@ -430,9 +441,9 @@ export default function Settings() {
               >
                 blocked Profiles
               </span>
-              <AllsettingModals
+              <BlockedProfileModal
                 Id={`my_blocked_profil_modal`}
-              ></AllsettingModals>
+              ></BlockedProfileModal>
             </span>
 
             <span className="flex items-center gap-2">
@@ -444,9 +455,9 @@ export default function Settings() {
               >
                 Ignored Profiles
               </span>
-              <AllsettingModals
+              <IgnoredProfiledModal
                 Id={`my_ignored_profil_modal`}
-              ></AllsettingModals>
+              ></IgnoredProfiledModal>
             </span>
 
             <span className="flex items-center gap-2">
@@ -458,60 +469,117 @@ export default function Settings() {
               >
                 Communication settings
               </span>
-              <AllsettingModals
+              <CommunicationModal
                 Id={`my_communication_modal`}
-              ></AllsettingModals>
+              ></CommunicationModal>
             </span>
 
             <span className="flex items-center gap-2">
               <FaPhoneAlt></FaPhoneAlt>
-              <span onClick={() => document.getElementById("my_call_modal").showModal()}>
-                Call settings
+              <span>
+                <span
+                  onClick={() =>
+                    document.getElementById("my_call_modal").showModal()
+                  }
+                >
+                  Call Preferrence
+                </span>
               </span>
-              <AllsettingModals Id={`my_call_modal`}></AllsettingModals>
+              <CallPreferrencegModal
+                Id={`my_call_modal`}
+              ></CallPreferrencegModal>
             </span>
 
             <span className="flex items-center gap-2">
               <FaUserLock></FaUserLock>
-              <span onClick={() => document.getElementById("my_privacy_modal").showModal()}>
-                Privacy settings
+              <span
+                onClick={() =>
+                  document.getElementById("my_privacy_modal").showModal()
+                }
+              >
+                Privacy Settings
               </span>
-              <AllsettingModals
-                Id={`my_privacy_modal`}
-              ></AllsettingModals>
+              <PrivacyModal Id={`my_privacy_modal`}></PrivacyModal>
             </span>
 
             <span className="flex items-center gap-2">
               <FaLock></FaLock>
-              <span onClick={() =>
+              <span
+                onClick={() =>
                   document.getElementById("my_password_modal").showModal()
-                }>Change Password</span>
-                <AllsettingModals Id={`my_password_modal`}></AllsettingModals>
+                }
+              >
+                Change Password
+              </span>
+              <ChangePasswordModal
+                Id={`my_password_modal`}
+              ></ChangePasswordModal>
             </span>
 
             <span className="flex items-center gap-2">
               <FaArrowAltCircleRight></FaArrowAltCircleRight>
-              <span onClick={() =>
-                  document.getElementById("my_logout_modal").showModal()
-                }>Logout</span>
-                <AllsettingModals Id={`my_logout_modal`}></AllsettingModals>
+              <span>
+                Logout
+              </span>
             </span>
 
             <span className="flex items-center gap-2">
               <FaUserCheck></FaUserCheck>
-              <span onClick={() =>
+              <span
+                onClick={() =>
                   document.getElementById("my_deactive_modal").showModal()
-                }>Deactivate / Hide Account</span>
-                <AllsettingModals Id={`my_deactive_modal`}></AllsettingModals>
+                }
+              >
+                Deactivate / Hide Account
+              </span>
+              <DeactiveModal Id={`my_deactive_modal`}></DeactiveModal>
             </span>
 
             <span className="flex items-center gap-2">
               <FaTrashAlt></FaTrashAlt>
-              <span onClick={() =>
+              <span
+                onClick={() =>
                   document.getElementById("my_delete_modal").showModal()
-                }>Delete Profile</span>
-                <AllsettingModals Id={`my_delete_modal`}></AllsettingModals>
+                }
+              >
+                Delete Profile
+              </span>
+              <DeleteProfileModal Id={`my_delete_modal`}></DeleteProfileModal>
             </span>
+          </div>
+
+          <div className="mt-4 space-y-2 border-t-2">
+            <span
+              className="flex items-center gap-2"
+              onClick={() =>
+                document.getElementById("my_helpcenter_modal").showModal()
+              }
+            >
+              24/7 Help Center
+              <HelpCenterModal Id={`my_helpcenter_modal`}></HelpCenterModal>
+            </span>
+            <span
+              className="flex items-center gap-2"
+              onClick={() =>
+                document.getElementById("my_termcondition_modal").showModal()
+              }
+            >
+              Terms & Conditions
+              <TermConditionmodal
+                Id={`my_termcondition_modal`}
+              ></TermConditionmodal>
+            </span>
+            <span
+              className="flex items-center gap-2"
+              onClick={() =>
+                document.getElementById("my_privacypolicy_modal").showModal()
+              }
+            >
+              Privacy Policy
+            </span>
+            <PrivacyPolicyModal
+              Id={`my_privacypolicy_modal`}
+            ></PrivacyPolicyModal>
           </div>
         </div>
       </div>

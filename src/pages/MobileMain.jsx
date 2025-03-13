@@ -7,12 +7,10 @@ import {
   FaEdit,
   FaGrinHearts,
   FaMobileAlt,
-  FaSearch,
   FaUserEdit,
 } from "react-icons/fa";
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 import { Link, NavLink } from "react-router-dom";
-import logo from "/logo.svg";
 import { FaGear, FaUsersGear } from "react-icons/fa6";
 import { RiLoginBoxLine } from "react-icons/ri";
 
