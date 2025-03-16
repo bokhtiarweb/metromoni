@@ -14,7 +14,6 @@ import {
 import { Link } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import Logout from "../Mobile/MobileDash/SettingModals/Logout";
 import BlockedProfileModal from "../Mobile/MobileDash/SettingModals/BlockedProfileModal";
 import IgnoredProfiledModal from "../Mobile/MobileDash/SettingModals/IgnoredProfiledModal";
 import CommunicationModal from "../Mobile/MobileDash/SettingModals/CommunicationModal";

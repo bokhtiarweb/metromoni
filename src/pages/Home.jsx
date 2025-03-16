@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
+import { FaEye } from "react-icons/fa";
 
 const bg = "/people.jpg";
 const trustedImg = "/trustedhome_icon.png";
@@ -115,266 +116,312 @@ const testimonials = [
 ];
 
 export default function Home() {
+  const modalRef = useRef(null);
+  const [showForgotPass, setShowForgotPass] = useState(true);
+
+  const openModal = () => {
+    if (modalRef.current) {
+      modalRef.current.showModal();
+    }
+  };
+
+  const closeModal = () => {
+    if (modalRef.current) {
+      modalRef.current.close();
+      setShowForgotPass(true);
+    }
+  };
+
   return (
     <div
-      className={`bg-cover bg-center bg-no-repeat w-full bg-fixed`}
+      className="bg-cover bg-center bg-no-repeat w-full bg-fixed"
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <div className="grid items-center h-[100vh]">
-        <div className="max-w-screen-lg mx-auto bg-black opacity-80 p-8">
-          <h2 className="text-white font-bold text-3xl">
+      {/* Hero Section */}
+      <div className="flex items-center justify-center h-screen px-4 sm:px-8">
+        <div className="max-w-screen-lg bg-black bg-opacity-80 p-6 sm:p-8 text-center sm:text-left">
+          <h2 className="text-white font-bold text-2xl sm:text-3xl">
             No.1 Official Matrimony Service Exclusively For Bangladeshis
           </h2>
-          <h3 className="text-white text-xl mt-2">
+          <h3 className="text-white text-lg sm:text-xl mt-2">
             Find Bangladeshi to marry from all spheres of life, including NRB
             members!
           </h3>
+          <div className="block sm:hidden mt-4">
+            {/* Open the modal */}
+            <button
+              className="btn btn-sm btn-success text-semibold text-white mr-2"
+              onClick={openModal}
+            >
+              Log In
+            </button>
+            <Link to={`/register`}>
+              <button className="btn btn-sm btn-success text-semibold text-white">
+                Register
+              </button>
+            </Link>
+
+            {/* Modal */}
+            <dialog
+              ref={modalRef}
+              className="modal"
+              onClick={(e) => e.target === modalRef.current && closeModal()}
+            >
+              <div className="modal-box">
+                {showForgotPass ? (
+                  <>
+                    <h3 className="font-bold text-lg">Log In</h3>
+                    <div className="mt-4">
+                      <form>
+                        <input
+                          type="text"
+                          placeholder="Matrimony ID / Email"
+                          className="input input-bordered w-full"
+                        />
+                        <div className="mt-4 relative">
+                          <input
+                            type="password"
+                            placeholder="Password"
+                            className="input input-bordered w-full"
+                          />
+                          <span className="absolute right-3 top-3">
+                            <FaEye className="text-xl" />
+                          </span>
+                        </div>
+
+                        {/* Checkbox & Forgot Password */}
+                        <div className="mt-4 flex justify-between">
+                          <label className="cursor-pointer flex items-center">
+                            <input
+                              type="checkbox"
+                              defaultChecked
+                              className="checkbox checkbox-success mr-2"
+                            />
+                            <span className="label-text">
+                              Keep me logged in
+                            </span>
+                          </label>
+                          <a
+                            onClick={() => setShowForgotPass(false)}
+                            className="text-blue-500 cursor-pointer"
+                          >
+                            Forgot password?
+                          </a>
+                        </div>
+
+                        <div className="mt-4 text-end">
+                          <button
+                            type="button"
+                            className="btn btn-outline btn-sm btn-accent mr-4"
+                            onClick={closeModal}
+                          >
+                            Cancel
+                          </button>
+                          <button className="btn btn-sm btn-success text-semibold text-white">
+                            Login
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <h3 className="font-bold text-lg">Forgot Password?</h3>
+                    <div className="mt-4">
+                      <form>
+                        <input
+                          type="text"
+                          placeholder="Matrimony ID / Email"
+                          className="input input-bordered w-full"
+                        />
+                        <p className="mt-4">
+                          Please enter your Matrimony ID/Email ID/Mobile Number.
+                          We'll send a mail & SMS with a link to reset your
+                          password. This link will be valid only for 2 hours.
+                        </p>
+                        <div className="mt-4 text-end">
+                          <button
+                            type="button"
+                            className="btn btn-outline btn-sm btn-accent mr-4"
+                            onClick={() => setShowForgotPass(true)}
+                          >
+                            Cancel
+                          </button>
+                          <button className="btn btn-sm btn-success text-semibold text-white">
+                            Submit
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </>
+                )}
+              </div>
+            </dialog>
+          </div>
         </div>
       </div>
 
-      {/* Bangladeshi Matrimony */}
-      <div className="bg-white py-12">
-        <div className="max-w-screen-lg mx-auto">
-          <h2 className="text-center text-3xl">Bangladeshi Matrimony</h2>
-          <div className="flex mt-12 gap-6">
-            <div className="text-center">
-              <img src={trustedImg} alt="" className="mx-auto" />
-              <p>
+      {/* Bangladeshi Matrimony Section */}
+      <div className="bg-white py-12 px-4 sm:px-0">
+        <div className="max-w-screen-lg mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl">Bangladeshi Matrimony</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+            <div>
+              <img src={trustedImg} alt="" className="mx-auto w-32 sm:w-auto" />
+              <p className="mt-2">
                 10+ years of service in helping Bangladeshis cherish the meaning
                 of Happy Marriage
               </p>
             </div>
             <div>
-              <img src={genuinImg} alt="" className="mx-auto" />
-              <p>Lakhs of genuine profiles with 100% verified phone numbers</p>
+              <img src={genuinImg} alt="" className="mx-auto w-32 sm:w-auto" />
+              <p className="mt-2">
+                Lakhs of genuine profiles with 100% verified phone numbers
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Search  */}
-      <div className="bg-[#fef6f6] py-12">
-        <div className="max-w-screen-lg mx-auto">
-          <h2 className="text-3xl text-center">
+      {/* Search Section */}
+      <div className="bg-[#fef6f6] py-12 px-4 sm:px-0">
+        <div className="max-w-screen-lg mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl">
             Begin Your Search for an Ideal Match
           </h2>
-          <div className="mt-6">
-            <div className="sm:flex-wrap flex justify-center gap-4">
-              {/* Brides or groom */}
-              <div>
-                <label className="form-control w-full max-w-xs">
-                  <div className="label">
-                    <span className="label-text">I'm looking for</span>
-                  </div>
-                  <select className="select select-bordered">
-                    <option disabled selected>
-                      Bride
-                    </option>
-                    <option>Groom</option>
-                  </select>
-                </label>
-              </div>
-              {/* Age from to */}
-              <div className="flex gap-4">
-                <div>
-                  <label className="form-control w-full max-w-xs">
-                    <div className="label">
-                      <span className="label-text">Age</span>
-                    </div>
-                    <select className="select select-bordered">
-                      <option disabled selected>
-                        18
-                      </option>
-                      <option>19</option>
-                      <option>20</option>
-                      <option>21</option>
-                      <option>22</option>
-                      <option>23</option>
-                      <option>24</option>
-                      <option>25</option>
-                    </select>
-                  </label>
-                </div>
-                <div>
-                  <label className="form-control w-full max-w-xs">
-                    <div className="label">
-                      <span className="label-text">Age</span>
-                    </div>
-                    <select className="select select-bordered">
-                      <option disabled selected>
-                        21
-                      </option>
-                      <option>22</option>
-                      <option>23</option>
-                      <option>24</option>
-                      <option>25</option>
-                      <option>26</option>
-                      <option>27</option>
-                      <option>28</option>
-                      <option>29</option>
-                      <option>30</option>
-                    </select>
-                  </label>
-                </div>
-              </div>
-              {/* Mother tongue */}
-              <div>
-                <label className="form-control w-full max-w-xs">
-                  <div className="label">
-                    <span className="label-text">Mother Tongue</span>
-                  </div>
-                  <select className="select select-bordered">
-                    <option disabled selected>
-                      Bengali
-                    </option>
-                    <option>Urdu</option>
-                    <option>English</option>
-                    <option>Hindi</option>
-                  </select>
-                </label>
-              </div>
-              {/* Cast */}
-              <div>
-                <label className="form-control w-full max-w-xs">
-                  <div className="label">
-                    <span className="label-text">Cast</span>
-                  </div>
-                  <select className="select select-bordered">
-                    <option disabled selected>
-                      Sect
-                    </option>
-                    <option>Sunni</option>
-                    <option>Shia</option>
-                    <option>Ahamadiyya</option>
-                    <option>Hanafi</option>
-                  </select>
-                </label>
-              </div>
-              {/* Search */}
-              <label className="form-control w-full max-w-xs">
-                <div className="label">
-                  <span className="label-text">Search</span>
-                </div>
-                <button className="btn btn-outline btn-primary">Search</button>
+          <div className="mt-6 flex flex-wrap justify-center gap-4">
+            {/* Form Controls */}
+            <div className="w-full sm:w-auto">
+              <label className="form-control">
+                <span className="label-text">I'm looking for</span>
+                <select className="select select-bordered">
+                  <option disabled selected>
+                    Bride
+                  </option>
+                  <option>Groom</option>
+                </select>
               </label>
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Slider */}
-      <div className="bg-white py-12">
-        <h2 className="text-3xl text-center">Bangladeshi Brides & Grooom</h2>
-        <div className="max-w-screen-lg mx-auto mt-12">
-          <div className="col-span-2 relative">
-            <div className="md:w-[90%] mx-auto">
-              {/* Custom Navigation outside Swiper */}
-              <button className="swiper-button-prev absolute top-1/2 left-0 transform -translate-y-1 md:-z-0"></button>
-              <button className="swiper-button-next absolute top-1/2 right-0 transform -translate-y-1 md:-z-0"></button>
-
-              <Swiper
-                slidesPerView={5}
-                spaceBetween={30}
-                loop={true}
-                navigation={{
-                  prevEl: ".swiper-button-prev",
-                  nextEl: ".swiper-button-next",
-                }}
-                modules={[Navigation]}
-                className="mySwiper top_swipper"
-              >
-                {images.map((image, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="sm:w-[6rem] sm:h-[6rem] md:w-[6rem] md:h-[6rem] lg:w-[9rem] lg:h-[9rem]">
-                      <img
-                        src={image.image}
-                        alt={`Slide ${index + 1}`}
-                        className="w-[100%] h-[100%] rounded-full object-cover"
-                      />
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+            <div className="w-full flex justify-center sm:w-auto sm:flex-row gap-4">
+              <label className="form-control">
+                <span className="label-text">Age</span>
+                <select className="select select-bordered">
+                  <option disabled selected>
+                    18
+                  </option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                </select>
+              </label>
+              <label className="form-control">
+                <span className="label-text">To</span>
+                <select className="select select-bordered">
+                  <option disabled selected>
+                    21
+                  </option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                </select>
+              </label>
             </div>
-          </div>
-          <div className="mt-12 text-center">
-            <h2 className="text-2xl text-center">Be a Prospective Match</h2>
-            <Link to={`/register`}>
-              <button className="btn btn-sm btn-success text-white mt-4">
-                Register Free
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      {/* Matrimony App */}
-      <div className="bg-white py-12">
-        <div className="max-w-screen-lg mx-auto flex justify-around">
-          <div className="grid items-center">
-            <div className="space-y-4">
-              <h2 className="text-3xl">Bangladeshi Matrimony App</h2>
-              <div>
-                <p>Over 1 lakh+ installs</p>
-                <p>Always stay up to date with faster & easier matchmaking</p>
-                <p>Get 24/7 support and world class user experience</p>
-              </div>
-              <img src={playStoreImg} alt="" />
+            <div className="w-full sm:w-auto">
+              <label className="form-control">
+                <span className="label-text">Mother Tongue</span>
+                <select className="select select-bordered">
+                  <option disabled selected>
+                    Bengali
+                  </option>
+                  <option>Urdu</option>
+                  <option>English</option>
+                  <option>Hindi</option>
+                </select>
+              </label>
             </div>
-          </div>
-          <div>
-            <img src={appImg} alt="" />
+            <button className="btn btn-primary w-full sm:w-auto">Search</button>
           </div>
         </div>
       </div>
 
-      {/* Bangladesh No.1 Matrimony slider */}
-      <div className="py-16 bg-gray-100">
-        <h2 className="text-center text-2xl font-semibold text-blue-700">
-          Bangladeshi Matrimony the No.1 choice for finding your life partner
+      {/* Slider Section */}
+      <div className="bg-white py-12 px-4 sm:px-0">
+        <h2 className="text-2xl sm:text-3xl text-center">
+          Bangladeshi Brides & Grooms
         </h2>
-
-        <div className="max-w-4xl mx-auto mt-8 testimonial_slider">
+        <div className="max-w-screen-lg mx-auto mt-8">
           <Swiper
-            modules={[Navigation]}
-            spaceBetween={30}
             slidesPerView={1}
-            navigation
+            spaceBetween={20}
+            breakpoints={{
+              640: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              1024: { slidesPerView: 5 },
+            }}
             loop={true}
-            className="rounded-lg shadow-md"
+            navigation={true}
+            modules={[Navigation]}
+            className="mySwiper"
           >
-            {testimonials.map((testimonial) => (
-              <SwiperSlide key={testimonial.id}>
-                <div className="bg-white p-6 flex flex-col md:flex-row rounded-lg shadow-lg">
-                  {/* Image */}
+            {images.map((image, index) => (
+              <SwiperSlide key={index} className="flex justify-center">
+                <div className="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40">
                   <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-48 h-48 rounded-lg object-cover"
+                    src={image.image}
+                    alt={`Slide ${index + 1}`}
+                    className="w-full h-full rounded-full object-cover"
                   />
-
-                  {/* Text Content */}
-                  <div className="ml-6 flex flex-col justify-center">
-                    <h3 className="text-lg font-bold">{testimonial.name}</h3>
-                    <p className="text-gray-600 mt-2">{testimonial.story}</p>
-                    <a href="#" className="text-blue-500 font-semibold mt-2">
-                      Read more
-                    </a>
-                  </div>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
+      </div>
 
-        {/* Register */}
-        <div className="text-center mt-10">
-          <p className="text-lg">Now it's your turn to be happily married</p>
-          <Link to={`/register`}>
-            <button className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700">
-              Register Free
-            </button>
-          </Link>
+      {/* Matrimony App Section */}
+      <div className="bg-white py-12 px-4 sm:px-0">
+        <div className="max-w-screen-lg mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div className="text-center sm:text-left">
+            <h2 className="text-2xl sm:text-3xl">Bangladeshi Matrimony App</h2>
+            <p className="mt-2">Over 1 lakh+ installs</p>
+            <p>Always stay up to date with faster & easier matchmaking</p>
+            <p>Get 24/7 support and world-class user experience</p>
+            <img
+              src={playStoreImg}
+              alt=""
+              className="mx-auto sm:mx-0 mt-4 w-32 sm:w-auto"
+            />
+          </div>
+          <img src={appImg} alt="" className="w-48 sm:w-auto" />
+        </div>
+      </div>
+
+      {/* Testimonials Section */}
+      <div className="py-16 bg-gray-100 px-4 sm:px-0">
+        <h2 className="text-center text-2xl font-semibold text-blue-700">
+          Bangladeshi Matrimony - The No.1 choice for finding your life partner
+        </h2>
+        <div className="max-w-4xl mx-auto mt-8">
+          <Swiper slidesPerView={1} navigation loop modules={[Navigation]}>
+            {testimonials.map((testimonial) => (
+              <SwiperSlide key={testimonial.id}>
+                <div className="bg-white p-6 flex flex-col items-center sm:flex-row rounded-lg shadow-lg">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-32 sm:w-48 rounded-lg"
+                  />
+                  <div className="mt-4 sm:mt-0 sm:ml-6 text-center sm:text-left">
+                    <h3 className="text-lg font-bold">{testimonial.name}</h3>
+                    <p className="text-gray-600">{testimonial.story}</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>

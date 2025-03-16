@@ -4,6 +4,7 @@ import Footer from "../components/shared/Footer";
 import Sidebar from "../pages/Dashboard/Sidebar";
 import { useState } from "react";
 import MobileDashMenu from "../pages/Mobile/MobileDash/MobileDashMenu";
+import ChatBoxModal from "../pages/Dashboard/ChatBoxModal";
 
 export default function ProfileDetail() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -28,6 +29,7 @@ export default function ProfileDetail() {
               setIsOpen={setIsSidebarOpen}
             ></Sidebar>
           )}
+          <ChatBoxModal></ChatBoxModal>
         </div>
       </main>
       <footer className="bg-slate-600 hidden md:block">

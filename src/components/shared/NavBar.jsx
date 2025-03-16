@@ -24,7 +24,7 @@ export default function NavBar() {
         </div>
       </div>
       <div className="navbar-center hidden lg:flex"></div>
-      <div className="navbar-end">
+      <div className="navbar-end w-full hidden sm:block text-end">
         <span className="sm:text-sm text-lg mr-2">Already a Member?</span>
         {/* Open the modal using */}
         <button

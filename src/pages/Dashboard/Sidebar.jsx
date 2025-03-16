@@ -1,6 +1,8 @@
 // Sidebar.jsx
 import React from "react";
-import { FaArrowUp, FaMessage } from "react-icons/fa6";
+import { FaArrowUp, FaComment, FaMessage } from "react-icons/fa6";
+import OnlineMember from "./OnlineMember";
+import { FaDotCircle } from "react-icons/fa";
 
 export default function Sidebar({ isOpen, setIsOpen }) {
   return (
@@ -24,15 +26,37 @@ export default function Sidebar({ isOpen, setIsOpen }) {
             </span>
           </div>
         </button>
+
         <div className="p-4 text-white">
-          <p>
-            <span className="text-5xl text-red-600 border border-red-600">sidebar</span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-            exercitationem temporibus porro commodi suscipit mollitia ipsum odio
-            dolore? Veniam incidunt fugiat minima voluptatum nostrum debitis
-            placeat optio culpa qui eos.
-          </p>
+          <div className="divider my-0 text-sm">Contacted Member (214)</div>
+          <OnlineMember></OnlineMember>
+          <OnlineMember></OnlineMember>
+          <OnlineMember></OnlineMember>
+          <div className="divider mb-0 text-sm">Shortlisted (3)</div>
+          <OnlineMember></OnlineMember>
+          <OnlineMember></OnlineMember>
+          <OnlineMember></OnlineMember>
+          <div className="divider mb-0 text-sm">Preferred Matches (472)</div>
+          <OnlineMember></OnlineMember>
+          <OnlineMember></OnlineMember>
+          <OnlineMember></OnlineMember>
         </div>
+      </div>
+
+      <div className="flex items-center px-2 gap-1 absolute bottom-0">
+        <input
+          type="text"
+          placeholder="Search by ID"
+          className="input input-xs max-w-36"
+        />
+        <select defaultValue="Pick a color" className="select select-xs max-w-28">
+          <option>
+            <FaComment className="text-sm text-green-400"></FaComment>Online
+          </option>
+          <option>
+            <FaDotCircle></FaDotCircle> Invisible
+          </option>
+        </select>
       </div>
     </div>
   );
