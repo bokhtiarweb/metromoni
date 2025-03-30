@@ -130,14 +130,14 @@ export default function BigSlider() {
                   <table className="table table-zebra text-sm">
                     <tbody>
                       {/* row 1 */}
-                      <tr>
+                      <tr className="border-0">
                         <td>Age, Height</td>
                         <td>20 yrs, 5 ft 4 in / 162 cm</td>
                       </tr>
                       {/* row 2 */}
-                      <tr>
-                        <td>Education</td>
-                        <td>Higher Secondary / Secondary</td>
+                      <tr className="border-0">
+                        <td className="bg-gray-100">Education</td>
+                        <td className="bg-gray-100">Higher Secondary / Secondary</td>
                       </tr>
                       {/* row 3 */}
                       <tr>
@@ -152,14 +152,14 @@ export default function BigSlider() {
                   <table className="table table-zebra text-sm">
                     <tbody>
                       {/* row 1 */}
-                      <tr>
+                      <tr className="border-0">
                         <td>Religion</td>
                         <td>Islam</td>
                       </tr>
                       {/* row 2 */}
                       <tr>
-                        <td>Sect</td>
-                        <td>Sunni (Sect No Bar)</td>
+                        <td className="bg-gray-100">Sect</td>
+                        <td className="bg-gray-100">Sunni (Sect No Bar)</td>
                       </tr>
                     </tbody>
                   </table>
@@ -222,24 +222,24 @@ export default function BigSlider() {
                           <table className="table table-zebra text-sm">
                             <tbody>
                               {/* row 1 */}
-                              <tr>
+                              <tr className="border-0">
                                 <td>Profile Created for</td>
                                 <td>Self</td>
                               </tr>
                               {/* row 2 */}
-                              <tr>
-                                <td>Age</td>
-                                <td>18yrs</td>
+                              <tr className="border-0">
+                                <td className="bg-gray-100">Age</td>
+                                <td className="bg-gray-100">18yrs</td>
                               </tr>
                               {/* row 3 */}
-                              <tr>
+                              <tr className="border-0">
                                 <td>Gender</td>
                                 <td>Female</td>
                               </tr>
                               {/* row 4 */}
-                              <tr>
-                                <td>Mother Tongue</td>
-                                <td>Bengali</td>
+                              <tr className="border-0">
+                                <td className="bg-gray-100">Mother Tongue</td>
+                                <td className="bg-gray-100">Bengali</td>
                               </tr>
                             </tbody>
                           </table>
@@ -249,24 +249,24 @@ export default function BigSlider() {
                           <table className="table table-zebra text-sm">
                             <tbody>
                               {/* row 1 */}
-                              <tr>
+                              <tr className="border-0">
                                 <td>Name</td>
                                 <td>Jhon Henry</td>
                               </tr>
                               {/* row 2 */}
-                              <tr>
-                                <td>Height</td>
-                                <td>5 ft 3 in / 160 cm</td>
+                              <tr className="border-0">
+                                <td className="bg-gray-100">Height</td>
+                                <td className="bg-gray-100">5 ft 3 in / 160 cm</td>
                               </tr>
                               {/* row 3 */}
-                              <tr>
+                              <tr className="border-0">
                                 <td>Marital Status</td>
                                 <td>Unmarried</td>
                               </tr>
                               {/* row 4 */}
-                              <tr>
-                                <td>Physical Status</td>
-                                <td>Normal</td>
+                              <tr className="border-0">
+                                <td className="bg-gray-100">Physical Status</td>
+                                <td className="bg-gray-100">Normal</td>
                               </tr>
                             </tbody>
                           </table>
@@ -286,7 +286,7 @@ export default function BigSlider() {
                           <table className="table table-zebra text-sm">
                             <tbody>
                               {/* row 1 */}
-                              <tr className="flex justify-between">
+                              <tr className="flex justify-between border-b border-gray-200">
                                 <td>Religion</td>
                                 <td>Islam</td>
                               </tr>
@@ -298,7 +298,7 @@ export default function BigSlider() {
                           <table className="table table-zebra text-sm">
                             <tbody>
                               {/* row 1 */}
-                              <tr>
+                              <tr className="border-b border-gray-200">
                                 <td>Sect</td>
                                 <td>Sunni (Sect No Bar)</td>
                               </tr>
@@ -323,7 +323,7 @@ export default function BigSlider() {
                           <table className="table table-zebra text-sm">
                             <tbody>
                               {/* row 1 */}
-                              <tr className="flex justify-between">
+                              <tr className="flex justify-between border-b border-gray-200">
                                 <td>Educationi</td>
                                 <td>Higher Secondary / Secondary</td>
                               </tr>
@@ -335,14 +335,14 @@ export default function BigSlider() {
                           <table className="table table-zebra text-sm">
                             <tbody>
                               {/* row 1 */}
-                              <tr>
+                              <tr className="border-0">
                                 <td>Education Detail</td>
                                 <td>Nursing in Diploma</td>
                               </tr>
                               {/* row 2 */}
                               <tr>
-                                <td>Occupation</td>
-                                <td>Not Working</td>
+                                <td className="bg-gray-100">Occupation</td>
+                                <td className="bg-gray-100">Not Working</td>
                               </tr>
                             </tbody>
                           </table>
@@ -363,7 +363,7 @@ export default function BigSlider() {
                           <table className="table table-zebra text-sm">
                             <tbody>
                               {/* row 1 */}
-                              <tr className="flex justify-between">
+                              <tr className="flex justify-between border-0">
                                 <td>Country</td>
                                 <td>Bangladesh</td>
                               </tr>
@@ -375,7 +375,7 @@ export default function BigSlider() {
                           <table className="table table-zebra text-sm">
                             <tbody>
                               {/* row 1 */}
-                              <tr>
+                              <tr className="border-0">
                                 <td>Citizenship</td>
                                 <td>Bangladesha</td>
                               </tr>
@@ -397,35 +397,35 @@ export default function BigSlider() {
                       <div className="grid grid-cols-2">
                         {/* Left basic details */}
                         <div className="overflow-x-auto ml-10">
-                          <table className="table table-zebra text-sm">
+                          <table className="table text-sm bg-gray-100">
                             <tbody>
                               {/* row 1 */}
-                              <tr className="flex justify-between">
+                              <tr className="flex justify-between  border-0">
                                 <td>No. of Brother(s)</td>
                                 <td>Not Specified</td>
                               </tr>
                               {/* row 2 */}
-                              <tr className="flex justify-between">
-                                <td>No. of Sister(s)</td>
-                                <td>Not Specified</td>
+                              <tr className="flex justify-between border-0 bg-gray-100">
+                                <td className="bg-gray-100">No. of Sister(s)</td>
+                                <td className="bg-gray-100">Not Specified</td>
                               </tr>
                               {/* row 3 */}
-                              <tr className="flex justify-between">
+                              <tr className="flex justify-between border-0">
                                 <td>Ancestral/Family Origin</td>
                                 <td>Not Specified</td>
                               </tr>
                               {/* row 4 */}
-                              <tr className="flex justify-between">
+                              <tr className="flex justify-between border-0">
                                 <td>No. of Brother(s)</td>
                                 <td>Not Specified</td>
                               </tr>
                               {/* row 5 */}
-                              <tr className="flex justify-between">
+                              <tr className="flex justify-between border-0">
                                 <td>No. of Sister(s)</td>
                                 <td>Not Specified</td>
                               </tr>
                               {/* row 6 */}
-                              <tr className="flex justify-between">
+                              <tr className="flex justify-between border-0">
                                 <td>Fathers Occupation</td>
                                 <td>Business</td>
                               </tr>
@@ -476,14 +476,14 @@ export default function BigSlider() {
                       <div className="grid grid-cols-3">
                         {/* Top */}
                         <div className="overflow-x-auto ml-10 col-span-2">
-                          <table className="table table-zebra text-sm">
+                          <table className="table text-sm">
                             <tbody>
                               {/* row 1 */}
-                              <tr>
+                              <tr className="border-0">
                                 <td>Eating Habits</td>
                                 <td>Halal food always</td>
                               </tr>
-                              <tr>
+                              <tr className="border-0">
                                 <td>Drinking Habits</td>
                                 <td>Non-drinker</td>
                               </tr>
@@ -498,14 +498,14 @@ export default function BigSlider() {
                         <div className="ml-10 mt-6 col-span-3">
                           <div
                             tabIndex={0}
-                            className="collapse collapse-arrow border-base-300 bg-base-200 border"
+                            className="collapse collapse-arrow bg-base-200 border border-gray-400"
                           >
-                            <div className="collapse-title text-xl font-medium">
+                            <div className="collapse-title text-xl font-medium bg-gray-300">
                               <h3 className="text-lg ml-10">
                                 Interest & Hobbies
                               </h3>
                             </div>
-                            <div className="collapse-content">
+                            <div className="collapse-content bg-gray-100">
                               <div className="grid grid-cols-4 gap-6">
                                 <div className="text-center">
                                   <div className="border-b">

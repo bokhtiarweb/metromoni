@@ -29,7 +29,7 @@ export default function ViewprofileContent() {
   const [isShortlist, setIsShortlist] = useState(false);
 
   return (
-    <div className="sm:col-span-5 md:col-span-6 border-r border-base-300">
+    <div className="sm:col-span-5 md:col-span-6 border-r border-gray-300">
       {/* Before profileimage slider */}
       <div className="px-2">
         <div className="flex justify-between">
@@ -227,7 +227,7 @@ export default function ViewprofileContent() {
                 <div className="grid grid-cols-2 border-b-2 border-dotted pb-2">
                   {/* Left basic details */}
                   <div className="overflow-x-auto ml-10">
-                    <table className="table table-zebra text-sm">
+                    <table className="table text-sm">
                       <tbody>
                         {/* row 1 */}
                         <tr>
@@ -254,7 +254,7 @@ export default function ViewprofileContent() {
                   </div>
                   {/* Right basic details */}
                   <div className="overflow-x-auto ml-10">
-                    <table className="table table-zebra text-sm">
+                    <table className="table text-sm">
                       <tbody>
                         {/* row 1 */}
                         <tr>
@@ -292,7 +292,7 @@ export default function ViewprofileContent() {
                 <div className="grid grid-cols-2">
                   {/* Left basic details */}
                   <div className="overflow-x-auto ml-10">
-                    <table className="table table-zebra text-sm">
+                    <table className="table text-sm">
                       <tbody>
                         {/* row 1 */}
                         <tr>
@@ -300,8 +300,8 @@ export default function ViewprofileContent() {
                           <td>
                             <div className="flex">
                               <div className="relative inline-block">
-                                <span class="text-gray-800">01910213334</span>
-                                <div class="absolute inset-0 bg-gray-900 opacity-95"></div>
+                                <span className="text-gray-800">01910213334</span>
+                                <div className="absolute inset-0 bg-gray-800 opacity-95"></div>
                               </div>
                               <FaLock className="ml-2 text-green-500"></FaLock>
                             </div>
@@ -343,7 +343,7 @@ export default function ViewprofileContent() {
                 <div className="grid grid-cols-2">
                   {/* Left basic details */}
                   <div className="overflow-x-auto ml-10">
-                    <table className="table table-zebra text-sm">
+                    <table className="table text-sm">
                       <tbody>
                         {/* row 1 */}
                         <tr className="flex justify-between">
@@ -355,7 +355,7 @@ export default function ViewprofileContent() {
                   </div>
                   {/* Right basic details */}
                   <div className="overflow-x-auto ml-10">
-                    <table className="table table-zebra text-sm">
+                    <table className="table text-sm">
                       <tbody>
                         {/* row 1 */}
                         <tr>
@@ -380,7 +380,7 @@ export default function ViewprofileContent() {
                 <div className="grid grid-cols-2">
                   {/* Left basic details */}
                   <div className="overflow-x-auto ml-10">
-                    <table className="table table-zebra text-sm">
+                    <table className="table text-sm">
                       <tbody>
                         {/* row 1 */}
                         <tr className="flex justify-between">
@@ -392,7 +392,7 @@ export default function ViewprofileContent() {
                   </div>
                   {/* Right basic details */}
                   <div className="overflow-x-auto ml-10">
-                    <table className="table table-zebra text-sm">
+                    <table className="table text-sm">
                       <tbody>
                         {/* row 1 */}
                         <tr>
@@ -420,7 +420,7 @@ export default function ViewprofileContent() {
                 <div className="grid grid-cols-2">
                   {/* Left basic details */}
                   <div className="overflow-x-auto ml-10">
-                    <table className="table table-zebra text-sm">
+                    <table className="table text-sm">
                       <tbody>
                         {/* row 1 */}
                         <tr className="flex justify-between">
@@ -432,7 +432,7 @@ export default function ViewprofileContent() {
                   </div>
                   {/* Right basic details */}
                   <div className="overflow-x-auto ml-10">
-                    <table className="table table-zebra text-sm">
+                    <table className="table text-sm">
                       <tbody>
                         {/* row 1 */}
                         <tr>
@@ -455,7 +455,7 @@ export default function ViewprofileContent() {
                 <div className="grid grid-cols-2">
                   {/* Left basic details */}
                   <div className="overflow-x-auto ml-10">
-                    <table className="table table-zebra text-sm">
+                    <table className="table text-sm">
                       <tbody>
                         {/* row 1 */}
                         <tr className="flex justify-between">
@@ -529,7 +529,7 @@ export default function ViewprofileContent() {
                 <div className="grid grid-cols-3">
                   {/* Top */}
                   <div className="overflow-x-auto ml-10 col-span-2">
-                    <table className="table table-zebra text-sm">
+                    <table className="table text-sm">
                       <tbody>
                         {/* row 1 */}
                         <tr>
@@ -551,7 +551,7 @@ export default function ViewprofileContent() {
                   <div className="ml-10 mt-6 col-span-3">
                     <div
                       tabIndex={0}
-                      className="collapse collapse-arrow border-base-300 bg-base-200 border"
+                      className="collapse collapse-arrow border-gray-300 bg-gray-200 border"
                     >
                       <div className="collapse-title text-xl font-medium">
                         <h3 className="text-lg ml-10">Interest & Hobbies</h3>
@@ -614,7 +614,7 @@ export default function ViewprofileContent() {
       </div>
       {/* Next profile */}
       <div className="py-4">
-        <h3 className=" bg-slate-400">Next profile</h3>
+        <h3 className=" bg-slate-300">Next profile</h3>
       </div>
     </div>
   );

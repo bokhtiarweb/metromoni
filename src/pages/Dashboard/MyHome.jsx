@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import "../../index.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
@@ -39,7 +40,15 @@ const educations = [
   "Bachelors",
   "Diploma",
 ];
-const locations = ["Bangladesh", "Canada", "Saudi Arabia", "USA", "UK", "India", "Australia",];
+const locations = [
+  "Bangladesh",
+  "Canada",
+  "Saudi Arabia",
+  "USA",
+  "UK",
+  "India",
+  "Australia",
+];
 const matchedprofessions = [
   "Student",
   "Student",
@@ -81,7 +90,20 @@ const matchedEducations = [
   "Higher secondary",
 ];
 const matchedLocations = [
-  "Bangladesh", "Canada", "Saudi Arabia", "USA", "UK", "India","Bangladesh", "Canada", "Saudi Arabia", "Australia","USA", "UK", "USA", "UK"
+  "Bangladesh",
+  "Canada",
+  "Saudi Arabia",
+  "USA",
+  "UK",
+  "India",
+  "Bangladesh",
+  "Canada",
+  "Saudi Arabia",
+  "Australia",
+  "USA",
+  "UK",
+  "USA",
+  "UK",
 ];
 
 export default function MyHome() {
@@ -136,7 +158,7 @@ export default function MyHome() {
               {/* Accordian section start here */}
               <div className="join join-vertical w-full">
                 {/* First accordian  */}
-                <div className="collapse collapse-arrow join-item border-b border-base-300">
+                <div className="collapse collapse-arrow join-item border-b border-gray-300">
                   <input type="radio" name="my-accordion-4" defaultChecked />
                   <div className="collapse-title text-xl font-medium text-gray-700">
                     Messages
@@ -154,7 +176,7 @@ export default function MyHome() {
                       />
                       <div
                         role="tabpanel"
-                        className="tab-content bg-base-100 border-base-300 "
+                        className="tab-content bg-gray-100 border-gray-300 "
                       >
                         <div className="text-gray-600">
                           <a
@@ -219,7 +241,7 @@ export default function MyHome() {
                       />
                       <div
                         role="tabpanel"
-                        className="tab-content bg-base-100 border-base-300"
+                        className="tab-content bg-gray-100 border-gray-300"
                       >
                         <div className="text-gray-600">
                           <a
@@ -279,7 +301,7 @@ export default function MyHome() {
                   </div>
                 </div>
                 {/* Second accordian  */}
-                <div className="collapse collapse-arrow join-item border-b border-base-300">
+                <div className="collapse collapse-arrow join-item border-b border-gray-300">
                   <input type="radio" name="my-accordion-4" />
                   <div className="collapse-title text-xl font-medium text-gray-700">
                     Requests
@@ -297,7 +319,7 @@ export default function MyHome() {
                       />
                       <div
                         role="tabpanel"
-                        className="tab-content bg-base-100 border-base-300 "
+                        className="tab-content bg-gray-100 border-gray-300 "
                       >
                         <div className="text-gray-600">
                           <a
@@ -342,7 +364,7 @@ export default function MyHome() {
                       />
                       <div
                         role="tabpanel"
-                        className="tab-content bg-base-100 border-base-300"
+                        className="tab-content bg-gray-100 border-gray-300"
                       >
                         <div className="text-gray-600">
                           <a
@@ -395,11 +417,11 @@ export default function MyHome() {
               {/* Accordian section end here */}
             </div>
             {/* Chat History */}
-            <div className="border-b border-gray-400 my-4 pb-2">
+            <div className="border-b border-gray-300 my-4 pb-2">
               <a
                 href="#"
                 target="_blank"
-                className="text-lg font-bold px-4 border-b border-gray-400 text-gray-600"
+                className="text-lg font-bold px-4text-gray-600"
               >
                 Chat History
               </a>
@@ -414,7 +436,7 @@ export default function MyHome() {
                   <table className="table">
                     <tbody className="text-gray-600">
                       {/* row 1 */}
-                      <tr>
+                      <tr className="border-b border-gray-300">
                         <td>
                           <a href="#" target="_blank">
                             SMS sent
@@ -429,7 +451,7 @@ export default function MyHome() {
                         </td>
                       </tr>
                       {/* row 2 */}
-                      <tr>
+                      <tr className="border-b border-gray-300">
                         <td>
                           <a href="#" target="_blank">
                             SMS Received
@@ -444,7 +466,7 @@ export default function MyHome() {
                         </td>
                       </tr>
                       {/* row 3 */}
-                      <tr>
+                      <tr className="border-b border-gray-300">
                         <td>
                           <a href="#" target="_blank">
                             Members you have sortlisted
@@ -459,7 +481,7 @@ export default function MyHome() {
                         </td>
                       </tr>
                       {/* row 4 */}
-                      <tr>
+                      <tr className="border-b border-gray-300">
                         <td>
                           <a href="#" target="_blank">
                             Members you have blocked
@@ -474,7 +496,7 @@ export default function MyHome() {
                         </td>
                       </tr>
                       {/* row 5 */}
-                      <tr>
+                      <tr className="border-b border-gray-300">
                         <td>
                           <a href="#" target="_blank">
                             Memebers you have ignored
@@ -489,7 +511,7 @@ export default function MyHome() {
                         </td>
                       </tr>
                       {/* row 6 */}
-                      <tr>
+                      <tr className="border-b border-gray-300">
                         <td>
                           <a href="#" target="_blank">
                             Mobile no(s) viewed by You
@@ -532,33 +554,41 @@ export default function MyHome() {
                 <TabList className={"sm:flex-wrap flex fixed bg-gray-100 z-10"}>
                   <Tab>
                     <div className="text-center">
-                      <div className="badge badge-md">987,654</div>
-                      <p className="text-sm font-semibold text-gray-600">
-                        Latest matches
-                      </p>
+                      <div className="badge badge-md bg-gray-100 border-0">
+                        987,654
+                      </div>
+                      <p className="text-sm font-semibold">Latest matches</p>
                     </div>
                   </Tab>
                   <Tab>
                     <div className="text-center">
-                      <div className="badge badge-md">987,654</div>
+                      <div className="badge badge-md bg-gray-100 border-0">
+                        987,654
+                      </div>
                       <p>Yet to viewed</p>
                     </div>
                   </Tab>
                   <Tab>
                     <div className="text-center">
-                      <div className="badge badge-md">987,654</div>
+                      <div className="badge badge-md bg-gray-100 border-0">
+                        987,654
+                      </div>
                       <p>Recently Updated</p>
                     </div>
                   </Tab>
                   <Tab>
                     <div className="text-center">
-                      <div className="badge badge-md">987,654</div>
+                      <div className="badge badge-md bg-gray-100 border-0">
+                        987,654
+                      </div>
                       <p>viewed not contacted</p>
                     </div>
                   </Tab>
                   <Tab>
                     <div className="text-center">
-                      <div className="badge badge-md">987,654</div>
+                      <div className="badge badge-md bg-gray-100 border-0">
+                        987,654
+                      </div>
                       <p>viewed your mobile No</p>
                     </div>
                   </Tab>
@@ -811,14 +841,20 @@ export default function MyHome() {
         )}
         {activeTat === "preferred location" && (
           <>
-          <div
+            <div
               ref={scrollRef}
-              className="flex overflow-x-auto gap-2 scrollbar-hide">
-            {
-              locations.map((item, indx) => <PreferredLocationMenu key={indx} item={item} location={location} handleLocation={handleLocation}></PreferredLocationMenu>)
-            }
-          </div>
-          {location === "bangladesh" ? (
+              className="flex overflow-x-auto gap-2 scrollbar-hide"
+            >
+              {locations.map((item, indx) => (
+                <PreferredLocationMenu
+                  key={indx}
+                  item={item}
+                  location={location}
+                  handleLocation={handleLocation}
+                ></PreferredLocationMenu>
+              ))}
+            </div>
+            {location === "bangladesh" ? (
               <MobileView matched="bangladesh"></MobileView>
             ) : (
               matchedLocation.map((matched, indx) => (

@@ -4,16 +4,6 @@ const res = "/res.jpg";
 export default function Register() {
   return (
     <div className="relative bg-black">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img
-          src={res}
-          alt="Matrimony Background"
-          className="w-full h-[500px] md:h-[700px] object-cover"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-      </div>
-
       {/* Content */}
       <div className="max-w-screen-lg mx-auto relative z-10 text-white text-center py-16 px-4">
         <h1 className="text-2xl md:text-3xl font-bold">
@@ -23,6 +13,7 @@ export default function Register() {
           Find Bangladeshis to marry from all spheres of life, including NRB
           members!
         </p>
+        
 
         {/* Form Section */}
         <div className="bg-white rounded-lg mt-6 shadow-lg py-6 px-6 w-full max-w-lg mx-auto">
@@ -31,18 +22,18 @@ export default function Register() {
             <div className="flex flex-col sm:flex-row gap-4">
               <label className="form-control w-full">
                 <span className="label-text">Profile for</span>
-                <select className="border border-gray-300 p-3 rounded-md text-gray-700 w-full">
-                  <option>Select Profile</option>
-                  <option>Groom</option>
-                  <option>Bride</option>
+                <select className="bg-white border border-gray-300 p-3 rounded-md text-gray-700 w-full">
+                  <option value="">Select Profile</option>
+                  <option value="groom">Groom</option>
+                  <option value="bride">Bride</option>
                 </select>
               </label>
               <label className="form-control w-full">
                 <span className="label-text">Gender</span>
-                <select className="border border-gray-300 p-3 rounded-md text-gray-700 w-full">
-                  <option>Select Gender</option>
-                  <option>Male</option>
-                  <option>Female</option>
+                <select className="bg-white border border-gray-300 p-3 rounded-md text-gray-700 w-full">
+                  <option value="">Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
                 </select>
               </label>
             </div>
@@ -53,7 +44,7 @@ export default function Register() {
               <input
                 type="text"
                 placeholder="Enter Name"
-                className="border border-gray-300 p-3 rounded-md text-gray-700 w-full"
+                className="bg-white border border-gray-300 p-3 rounded-md text-gray-700 w-full"
               />
             </label>
 
@@ -61,7 +52,7 @@ export default function Register() {
             <div className="flex flex-col sm:flex-row gap-4">
               <label className="form-control w-full">
                 <span className="label-text">Country Code</span>
-                <select className="border border-gray-300 p-3 rounded-md text-gray-700 w-full">
+                <select className="bg-white border border-gray-300 p-3 rounded-md text-gray-700 w-full">
                   <option value="+880">🇧🇩 +880</option>
                   <option value="+91">🇮🇳 +91</option>
                   <option value="+1">🇺🇸 +1</option>
@@ -71,9 +62,9 @@ export default function Register() {
               <label className="form-control w-full">
                 <span className="label-text">Mobile No</span>
                 <input
-                  type="text"
+                  type="tel"
                   placeholder="Enter Mobile Number"
-                  className="border border-gray-300 p-3 rounded-md text-gray-700 w-full"
+                  className="bg-white border border-gray-300 p-3 rounded-md text-gray-700 w-full"
                 />
               </label>
             </div>
@@ -88,7 +79,7 @@ export default function Register() {
         {/* Terms & Conditions */}
         <div className="mt-4 text-sm text-gray-300 flex items-center justify-center flex-wrap">
           <input type="checkbox" className="mr-2" />
-          By clicking on Register Free, you agree to{" "}
+          By clicking on Register Free, you agree to
           <a href="#" className="text-blue-400 ml-1">
             Terms & Conditions
           </a>
@@ -98,6 +89,15 @@ export default function Register() {
           </a>
           .
         </div>
+      </div>
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src={res}
+          alt="Matrimony Background"
+          className="w-full h-[709px] object-cover"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-30 h-[709px]"></div>
       </div>
     </div>
   );

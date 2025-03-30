@@ -7,10 +7,12 @@ const bridGroomImg = "/cat.jpg";
 export default function BangladeshiBrideGroom() {
   return (
     <div className="max-w-screen-lg mx-auto py-8">
-      <BrideGoomModal></BrideGoomModal>
+      <div className="hidden sm:block">
+        <BrideGoomModal></BrideGoomModal>
+      </div>
       <div className="grid grid-cols-8">
-        <div className="col-span-6">
-          <a href="#" className="text-blue-500 hover:underline">
+        <div className="col-span-8  sm:col-span-6">
+          <a href="#" className="text-blue-500 hover:underline hidden sm:block">
             Bangladeshi Matrimony
           </a>
           <div className="mt-6">
@@ -20,10 +22,12 @@ export default function BangladeshiBrideGroom() {
             </div>
 
             {/* top Pagination */}
-            <div className="pt-6 pb-4 flex justify-end">
+            <div className="bg-gray-100 pt-6 pb-4 flex justify-end">
               <div className="flex gap-1 mr-4">
                 <button className="join-item btn btn-xs">Prev</button>
-                <button className="join-item btn btn-xs bg-green-500">1</button>
+                <button className="join-item btn btn-xs bg-green-500 text-black border-0">
+                  1
+                </button>
                 <button className="join-item btn btn-xs btn-active">2</button>
                 <button className="join-item btn btn-xs">3</button>
                 <button className="join-item btn btn-xs">4</button>
@@ -53,7 +57,7 @@ export default function BangladeshiBrideGroom() {
                         </span>
                       </div>
                       <div className="flex gap-2">
-                        <div className="w-48 h-48 p-4 border">
+                        <div className="w-32 h-32 sm:w-48 sm:h-48 p-4 border">
                           <img
                             src={bridGroomImg}
                             alt=""
@@ -113,7 +117,7 @@ export default function BangladeshiBrideGroom() {
                         </span>
                       </div>
                       <div className="flex gap-2">
-                        <div className="w-48 h-48 p-4 border">
+                        <div className="w-32 h-32 sm:w-48 sm:h-48 p-4 border">
                           <img
                             src={bridGroomImg}
                             alt=""
@@ -237,7 +241,7 @@ export default function BangladeshiBrideGroom() {
                         </span>
                       </div>
                       <div className="flex gap-2">
-                        <div className="w-48 h-48 p-4 border">
+                        <div className="w-32 h-32 sm:w-48 sm:h-48 p-4 border">
                           <img
                             src={bridGroomImg}
                             alt=""
@@ -294,7 +298,9 @@ export default function BangladeshiBrideGroom() {
             <div className="pt-6 pb-4 flex justify-end">
               <div className="flex gap-1 mr-4">
                 <button className="join-item btn btn-xs">Prev</button>
-                <button className="join-item btn btn-xs bg-green-500">1</button>
+                <button className="join-item btn btn-xs bg-green-500 text-black border-0">
+                  1
+                </button>
                 <button className="join-item btn btn-xs btn-active">2</button>
                 <button className="join-item btn btn-xs">3</button>
                 <button className="join-item btn btn-xs">4</button>
@@ -305,12 +311,12 @@ export default function BangladeshiBrideGroom() {
           </div>
         </div>
         {/* right gird */}
-        <div className="col-span-2 p-2">
+        <div className="col-span-2 p-2 hidden sm:block">
           <div>
             <h2 className="text-xl">Quick Search</h2>
             {/* Quick Search */}
             <div className="mt-8">
-              <div className="flex justify-between">
+              <div className="sm:grid flex justify-between">
                 <span>Looking for: </span>
                 <div className="flex items-center gap-4">
                   <div className="form-control">
@@ -335,11 +341,11 @@ export default function BangladeshiBrideGroom() {
               </div>
               {/* Age from to */}
               <div className="mt-2">
-                <div className="flex justify-between">
+                <div className="sm:grid flex justify-between">
                   <span>Age: </span>
                   <div className="flex gap-4">
                     <div className="flex w-full max-w-xs">
-                      <select className="select select-bordered select-xs">
+                      <select className="select select-bordered select-xs bg-gray-100 ">
                         <option disabled selected>
                           18
                         </option>
@@ -353,7 +359,7 @@ export default function BangladeshiBrideGroom() {
                       </select>
                     </div>
                     <div className="w-full max-w-xs">
-                      <select className="select select-bordered select-xs">
+                      <select className="select select-bordered select-xs bg-gray-100 ">
                         <option disabled selected>
                           21
                         </option>
@@ -373,7 +379,7 @@ export default function BangladeshiBrideGroom() {
               </div>
               <div className="mt-2 flex justify-between gap-4">
                 <span>Religion: </span>
-                <select className="select select-bordered select-xs w-full max-w-xs">
+                <select className="select select-bordered select-xs w-full max-w-xs bg-gray-100 ">
                   <option disabled selected>
                     Islam
                   </option>

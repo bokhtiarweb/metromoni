@@ -15,6 +15,9 @@ import {
   IoMdPersonAdd,
 } from "react-icons/io";
 import { Link, NavLink } from "react-router-dom";
+import HelpCenterModal from "./SettingModals/HelpCenterModal";
+import TermConditionmodal from "./SettingModals/TermConditionmodal";
+import PrivacyPolicyModal from "./SettingModals/PrivacyPolicyModal";
 const profileImag = "/cat.jpg";
 
 export default function MobileDashMenu() {
@@ -71,7 +74,9 @@ export default function MobileDashMenu() {
   return (
     <div className={`max-w-screen-lg mx-auto navbar -z-10`}>
       <div className="navbar-center block sm:hidden bg- lg:flex z-50">
-        <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+        <ul onClick={closeDrawer} className="menu menu-horizontal px-1">
+          {navLinks}
+        </ul>
       </div>
       <div className="navbar-start">
         {/* Toggle Sidebar Button */}
@@ -94,10 +99,7 @@ export default function MobileDashMenu() {
             </button>
           </div>
           {/* Sidebar Content */}
-          <div
-            onClick={closeDrawer}
-            className="w-fit mt-1"
-          >
+          <div onClick={closeDrawer} className="w-fit mt-1">
             <div className="bg-slate-200 px-2">
               <div className="flex items-center gap-4">
                 <div className="w-20 h-20">
@@ -167,10 +169,53 @@ export default function MobileDashMenu() {
                   <FaCrown className="text-xl"></FaCrown>Upgrade Now
                 </Link>
                 <div className="flex justify-between items-center">
-                  <Link to={`/profiledetail/settings`} className="flex items-center gap-2">
+                  <Link
+                    to={`/profiledetail/settings`}
+                    className="flex items-center gap-2"
+                  >
                     <IoMdPerson className="text-xl"></IoMdPerson> Settings
                   </Link>
                   <FaArrowRight></FaArrowRight>
+                </div>
+
+                <div className="mt-4 space-y-2 border-t-2">
+                  <span
+                    className="flex items-center gap-2"
+                    onClick={() =>
+                      document.getElementById("my_helpcenter_modal").showModal()
+                    }
+                  >
+                    24/7 Help Center
+                    <HelpCenterModal
+                      Id={`my_helpcenter_modal`}
+                    ></HelpCenterModal>
+                  </span>
+                  <span
+                    className="flex items-center gap-2"
+                    onClick={() =>
+                      document
+                        .getElementById("my_termcondition_modal")
+                        .showModal()
+                    }
+                  >
+                    Terms & Conditions
+                    <TermConditionmodal
+                      Id={`my_termcondition_modal`}
+                    ></TermConditionmodal>
+                  </span>
+                  <span
+                    className="flex items-center gap-2"
+                    onClick={() =>
+                      document
+                        .getElementById("my_privacypolicy_modal")
+                        .showModal()
+                    }
+                  >
+                    Privacy Policy
+                  </span>
+                  <PrivacyPolicyModal
+                    Id={`my_privacypolicy_modal`}
+                  ></PrivacyPolicyModal>
                 </div>
               </div>
             </div>

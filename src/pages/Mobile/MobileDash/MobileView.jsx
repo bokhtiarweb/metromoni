@@ -28,20 +28,20 @@ const users = [
 
 export default function MobileView({ activeTat, matched }) {
   return (
-    <div className="p-4 bg-white">
-      <h1 className="font-semibold text-white-800 mb-2">
-        Hand picked matches just for you
-      </h1>
-      {users.map((user) => (
-        <Link to={`/profiledetail/search`}>
-          <ProfileCard
-            key={user.id}
+    <Link to={`/profiledetail/viewprofile`}>
+      <div className="p-4 bg-white">
+        <h1 className="font-semibold text-white-800 mb-2">
+          Hand picked matches just for you
+        </h1>
+        {users.map((user) => (
+          <ProfileCard 
+          key={user.id}
             user={user}
             activeTat={activeTat}
             matched={matched}
           ></ProfileCard>
-        </Link>
-      ))}
-    </div>
+        ))}
+      </div>
+    </Link>
   );
 }

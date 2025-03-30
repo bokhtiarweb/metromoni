@@ -59,8 +59,8 @@ const images = [
 
 export default function TopSlider() {
   return (
-    <div className="col-span-2 relative">
-      <div className="md:w-[80%] mx-auto">
+    <div className="relative">
+      <div className="w-[80%] mx-auto">
         {/* Custom Navigation outside Swiper */}
         <button className="swiper-button-prev absolute top-1/2 left-0 transform -translate-y-1 md:-z-0"></button>
         <button className="swiper-button-next absolute top-1/2 right-0 transform -translate-y-1 md:-z-0"></button>
@@ -78,7 +78,7 @@ export default function TopSlider() {
         >
           {images.map((image, index) => (
             <SwiperSlide key={index}>
-              <div className="w-[6rem] h-[6rem]">
+              <div className="w-[5rem] h-[5rem]">
                 <img
                   src={image.image}
                   alt={`Slide ${index + 1}`}

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Footer() {
+export default function FooterLogin() {
   return (
     <div className="w-full bg-neutral mt-20">
       <div className="max-w-screen-lg mx-auto px-4">
@@ -22,43 +22,42 @@ export default function Footer() {
           <nav className="sm:text-left md:mx-auto">
             <h6 className="text-xl font-semibold">Help & Support</h6>
             <div className="flex flex-col mt-2 space-y-2">
-              <a href="/livehelp" target="_blank">Live help</a>
-              <a href="/contactus" target="_blank">Contact us</a>
-              <a href="/feedback" target="_blank">Feedback</a>
-              <a href="/faq" target="_blank">FAQs</a>
+              <a href="/livehelp">Live help</a>
+              <a href="/contactus">Contact us</a>
+              <a href="/feedback">Feedback</a>
+              <a href="/faq">FAQs</a>
             </div>
           </nav>
           <nav className="sm:text-left">
             <h6 className="text-xl font-semibold">Quick Links</h6>
             <div className="flex flex-col mt-2 space-y-2">
-              <a href="/membershipupgrade" target="_blank">Upgrade</a>
+              <a href="/membershipupgrade" target="_blank">
+                Upgrade
+              </a>
               <a className="font-bold" href="#">
                 Save Matrimony
               </a>
-              <a href="/bangladeshibridegroom" target="_blank">Popular Matrimony Searches</a>
-              <a href="/termcondition" target="_blank">Terms, Conditions and Refund Policy</a>
-              <a href="/privacypolicy" target="_blank">Privacy Policy</a>
+              <a href="/bangladeshibridegroom" target="_blank">
+                Popular Matrimony Searches
+              </a>
+              <a href="/termcondition" target="_blank">
+                Terms, Conditions and Refund Policy
+              </a>
+              <a href="/privacypolicy">Privacy Policy</a>
             </div>
           </nav>
         </footer>
 
-        <footer className="footer footer-center text-sm text-base-200 p-4">
+        <footer className="footer footer-center text-sm text-gray-200 p-4">
           <aside>
             <p>
-              BangladeshiMatrimony is part of Globalmatrimony.com | Copyright ©
-              2025. All rights reserved. This website is strictly for matrimony
-              purposes only and not a dating website.
+              Bangladeshimatrimony is part of GlobalMatrimony.com | Copyright ©
+              2025. All rights reserved.
             </p>
-          </aside>
-        </footer>
-
-        <footer className="footer text-neutral-content items-center p-4">
-          <aside className="grid-flow-col items-center justify-center">
-            <img
-              src="/payment-gateway-footer.png"
-              alt="Payment Gateway"
-              className="max-w-full h-auto"
-            />
+            <p className="font-bold mt-4">
+              This website is strictly for matrimonial purpose only and not a
+              dating website
+            </p>
           </aside>
         </footer>
       </div>

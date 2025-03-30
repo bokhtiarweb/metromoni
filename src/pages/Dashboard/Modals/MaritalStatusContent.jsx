@@ -3,7 +3,7 @@ import { FaAngleRight } from "react-icons/fa";
 
 export default function MaritalStatusContent({showSpecificModal}) {
   return (
-    <div className="collapse collapse-plus border border-base-300 bg-base-200">
+    <div className="collapse collapse-plus border border-gray-300 bg-gray-100">
       <input type="checkbox" className="peer min-h-0" />
       <div className="min-h-0 collapse-title p-2 sm:text-xs md:text-sm font-medium">
         marital status

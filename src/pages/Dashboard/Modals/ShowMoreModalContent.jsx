@@ -32,7 +32,7 @@ export default function ShowMoreModalContent({
       {/* More Button */}
       <button
         onClick={() => setShowMore(!showMore)}
-        className="btn btn-sm bg-gray-200 text-black px-3 py-1 rounded-md text-sm text-center float-right"
+        className="btn btn-sm bg-gray-100 hover:bg-gray-200 text-black px-3 py-1 rounded-md text-sm text-center float-right"
       >
         {showMore ? "Show Less ▲" : "More ▼"}
       </button>
@@ -51,7 +51,7 @@ export default function ShowMoreModalContent({
             >
               <div
                 key={index}
-                className="collapse collapse-plus border border-base-300 bg-base-200"
+                className="collapse collapse-plus border border-gray-300 bg-gray-100"
               >
                 <div className="min-h-0 collapse-title p-2 sm:text-xs md:text-sm font-medium">
                   {item}
@@ -139,7 +139,7 @@ export default function ShowMoreModalContent({
         {/* Show Less Button */}
         <button
           onClick={() => setShowMore(false)}
-          className="btn btn-sm bg-gray-200 text-black px-3 py-1 rounded-md text-sm mt-3 float-right"
+          className="btn btn-sm bg-gray-100 hover:bg-gray-200 text-black px-3 py-1 rounded-md text-sm mt-3 float-right"
         >
           Show Less ▲
         </button>

@@ -1,4 +1,3 @@
-import ProfileCard from "../ProfileCard";
 import SentCard from "./SentCard";
 
 const users = [

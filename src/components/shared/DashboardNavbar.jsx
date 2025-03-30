@@ -30,9 +30,9 @@ export default function DashboardNavbar() {
           </NavLink>
         </li>
         {/* Dropdown (Hidden by default, shown on hover) */}
-        <div className="absolute top-[45px] left-0 w-[550px] h-auto p-4 bg-base-100 hidden group-hover:block group-hover:bg-base-100 shadow-xl z-50">
-          <div className="flex">
-            <IoMdArrowDropup className="absolute -top-6 text-white text-5xl"></IoMdArrowDropup>
+        <div className="absolute top-[45px] left-0 w-[550px] h-auto bg-gray-100 hidden group-hover:block group-hover:bg-gray-100 shadow-xl z-50 ">
+          <div className="flex bg-gray-100 p-4">
+            <IoMdArrowDropup className="absolute -top-7 text-white text-5xl"></IoMdArrowDropup>
             <div>
               <p className="ml-4 activities_me">Activities done by me</p>
               <ul className="myhome_dropdown mt-4">
@@ -79,7 +79,7 @@ export default function DashboardNavbar() {
             Matches <div className="badge badge-warning -ml-1">12</div>
           </NavLink>
         </li>
-        <div className="absolute top-[45px] left-0 w-[270px] h-[auto] p-4 bg-base-100 hidden group-hover:block group-hover:bg-base-100 shadow-xl">
+        <div className="absolute top-[45px] left-0 w-[270px] h-[auto] p-4 bg-gray-100 hidden group-hover:block group-hover:bg-gray-100 shadow-xl">
           <div>
             <IoMdArrowDropup className="absolute -top-6 text-white text-5xl"></IoMdArrowDropup>
             <div>
@@ -112,7 +112,7 @@ export default function DashboardNavbar() {
           </NavLink>
         </li>
         {/* Dropdown (Hidden by default, shown on hover) */}
-        <div className="absolute top-[45px] left-0 w-[230px] h-auto p-4 bg-base-100 hidden group-hover:block group-hover:bg-base-100 shadow-xl">
+        <div className="absolute top-[45px] left-0 w-[230px] h-auto p-4 bg-gray-100 hidden group-hover:block group-hover:bg-gray-100 shadow-xl">
           <div className="flex">
             <IoMdArrowDropup className="absolute -top-6 text-white text-5xl"></IoMdArrowDropup>
             <div>
@@ -155,7 +155,7 @@ export default function DashboardNavbar() {
           </NavLink>
         </li>
         {/* Dropdown (Hidden by default, shown on hover) */}
-        <div className="absolute top-[45px] left-0 w-[230px] h-auto p-4 bg-base-100 hidden group-hover:block group-hover:bg-base-100 shadow-xl">
+        <div className="absolute top-[45px] left-0 w-[230px] h-auto p-4 bg-gray-100 hidden group-hover:block group-hover:bg-gray-100 shadow-xl">
           <div className="flex">
             <IoMdArrowDropup className="absolute -top-6 text-white text-5xl"></IoMdArrowDropup>
             <div>
@@ -177,7 +177,7 @@ export default function DashboardNavbar() {
                   <input
                     type="text"
                     placeholder="Search by ID"
-                    className="input input-bordered input-xs w-full max-w-xs"
+                    className="input input-bordered input-xs w-full max-w-xs bg-gray-100"
                   />
                   <button className="ml-2">
                     <FaSearch className="text-gray-400"></FaSearch>
@@ -251,7 +251,7 @@ export default function DashboardNavbar() {
           <div className="relative group flex">
             <BsPersonSquare className="text-2xl mr-2"></BsPersonSquare>
             {/* Dropdown (Hidden by default, shown on hover) */}
-            <div className="absolute top-[45px] right-0 w-[450px] h-auto p-4 bg-base-100 hidden group-hover:block group-hover:bg-base-100 shadow-xl">
+            <div className="absolute top-[45px] right-0 w-[450px] h-auto p-4 bg-gray-100 hidden group-hover:block group-hover:bg-gray-100 shadow-xl">
               <div className="border-b pb-4">
                 <p>
                   <strong className="text-gray-500">MD. Jhon</strong>{" "}
@@ -387,7 +387,7 @@ export default function DashboardNavbar() {
                       </Link>
                     </li>
                     <li>
-                      <Link>
+                      <Link to={`/logout`}>
                         <p className="flex items-center text-gray-500">
                           <span className="mr-2">
                             <RiLoginBoxLine className="text-lg"></RiLoginBoxLine>

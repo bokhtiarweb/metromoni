@@ -97,7 +97,7 @@ export default function Search() {
                                   <select
                                     value={`18`}
                                     onChange={() => {}}
-                                    className="select select-bordered select-sm  w-full"
+                                    className="select select-bordered select-sm w-full bg-gray-100"
                                   >
                                     <option disabled defaultValue={`18`}>
                                       18
@@ -121,7 +121,7 @@ export default function Search() {
                                   <select
                                     value={`21`}
                                     onChange={() => {}}
-                                    className="select select-bordered select-sm w-full"
+                                    className="select select-bordered select-sm w-full bg-gray-100"
                                   >
                                     <option disabled defaultValue={`21`}>
                                       21
@@ -150,11 +150,11 @@ export default function Search() {
                             </td>
                             <td>
                               <div className="flex">
-                                <div className="flex items-center gap-2 w-full max-w-sm">
+                                <div className="flex items-center gap-2 w-full max-w-sm ">
                                   <select
                                     value={`132 cm`}
                                     onChange={() => {}}
-                                    className="select select-bordered select-sm  w-full"
+                                    className="select select-bordered select-sm  w-full bg-gray-100"
                                   >
                                     <option disabled defaultValue={`132 cm`}>
                                       132 cm
@@ -175,7 +175,7 @@ export default function Search() {
                                   <select
                                     value={`132 cm`}
                                     onChange={() => {}}
-                                    className="select select-bordered select-sm  w-full"
+                                    className="select select-bordered select-sm w-full bg-gray-100"
                                   >
                                     <option disabled defaultValue={`132 cm`}>
                                       132 cm
@@ -330,7 +330,7 @@ export default function Search() {
                                 <select
                                   value={`Islam`}
                                   onChange={() => {}}
-                                  className="select select-bordered select-sm  w-full"
+                                  className="select select-bordered select-sm w-full bg-gray-100"
                                 >
                                   <option disabled defaultValue={`Islam`}>
                                     Islam
@@ -359,7 +359,7 @@ export default function Search() {
                                 <div className="flex items-center gap-4">
                                   <select
                                     multiple
-                                    className="w-full p-2 border rounded-md h-24"
+                                    className="w-full p-2 border rounded-md h-24 bg-gray-100"
                                     onDoubleClick={(e) =>
                                       toggleSelection(
                                         e.target.value,
@@ -380,7 +380,7 @@ export default function Search() {
                                   </select>
                                   <FaArrowsAltH className="text-5xl"></FaArrowsAltH>
                                   <select
-                                    className="w-full p-2 border rounded-md h-24"
+                                    className="w-full p-2 border rounded-md h-24 bg-gray-100"
                                     multiple
                                   >
                                     {selectedSect.map((sect) => (
@@ -410,7 +410,7 @@ export default function Search() {
                                 <div className="flex items-center gap-4">
                                   <select
                                     multiple
-                                    className="w-full p-2 border rounded-md h-24"
+                                    className="w-full p-2 border rounded-md h-24 bg-gray-100"
                                     onDoubleClick={(e) =>
                                       toggleSelection(
                                         e.target.value,
@@ -427,7 +427,7 @@ export default function Search() {
                                   </select>
                                   <FaArrowsAltH className="text-5xl"></FaArrowsAltH>
                                   <select
-                                    className="w-full p-2 border rounded-md h-24"
+                                    className="w-full p-2 border rounded-md h-24 bg-gray-100"
                                     multiple
                                   >
                                     {selectedLanguage.map((lang) => (
@@ -457,7 +457,7 @@ export default function Search() {
                                 <div className="flex items-center gap-4">
                                   <select
                                     multiple
-                                    className="w-full p-2 border rounded-md h-24"
+                                    className="w-full p-2 border rounded-md h-24 bg-gray-100"
                                     onDoubleClick={(e) =>
                                       toggleSelection(
                                         e.target.value,
@@ -474,7 +474,7 @@ export default function Search() {
                                   </select>
                                   <FaArrowsAltH className="text-5xl"></FaArrowsAltH>
                                   <select
-                                    className="w-full p-2 border rounded-md h-24"
+                                    className="w-full p-2 border rounded-md h-24 bg-gray-100"
                                     multiple
                                   >
                                     {selectedCountry.map((country) => (
@@ -504,7 +504,7 @@ export default function Search() {
                                 <div className="flex items-center gap-4">
                                   <select
                                     multiple
-                                    className="w-full p-2 border rounded-md h-24"
+                                    className="w-full p-2 border rounded-md h-24 bg-gray-100"
                                     onDoubleClick={(e) =>
                                       toggleSelection(
                                         e.target.value,
@@ -521,7 +521,7 @@ export default function Search() {
                                   </select>
                                   <FaArrowsAltH className="text-5xl"></FaArrowsAltH>
                                   <select
-                                    className="w-full p-2 border rounded-md h-24"
+                                    className="w-full p-2 border rounded-md h-24 bg-gray-100"
                                     multiple
                                   >
                                     {selectedEducation.map((edu) => (
@@ -635,7 +635,7 @@ export default function Search() {
                                 <button className="btn btn-warning btn-sm">
                                   Search
                                 </button>
-                                <button className="btn btn-sm">
+                                <button className="btn btn-sm text-gray-800 bg-gray-300 border-gray-400 hover:text-white">
                                   Search & Save
                                 </button>
                               </div>

@@ -96,25 +96,25 @@ export default function PageContent() {
                 <div className="grid grid-cols-3 border-b-2 border-dotted mb-2 mt-4 px-2 gap-4">
                   <div className="col-span-2">
                   <div className="overflow-x-auto">
-                    <table className="table table-zebra text-sm">
+                    <table className="table text-sm">
                       <tbody>
                         {/* row 1 */}
-                        <tr className="flex py-1">
+                        <tr className="flex py-1 border-b border-gray-300">
                           <td className="py-0 pl-0 text-gray-400">Age, Height</td>
                           <td className="py-0 pl-0 text-gray-700">20 yrs, 5 ft 4 in / 162 cm</td>
                         </tr>
                         {/* row 2 */}
-                        <tr className="flex py-1">
+                        <tr className="flex py-1 border-b border-gray-300">
                           <td className="py-0 pl-0 text-gray-400">Religion</td>
                           <td className="py-0 text-gray-700">Islam</td>
                         </tr>
                         {/* row 3 */}
-                        <tr className="flex py-1">
+                        <tr className="flex py-1 border-b border-gray-300">
                           <td className="py-0 pl-0 text-gray-400">Sect</td>
                           <td className="py-0 text-gray-700">Sunni (Caste No Bar)</td>
                         </tr>
                         {/* row 4 */}
-                        <tr className="flex py-1">
+                        <tr className="flex py-1 border-b border-gray-300">
                           <td className="py-0 pl-0 text-gray-400">Education</td>
                           <td className="py-0 text-gray-700">Higher Secondary / Secondary</td>
                         </tr>
@@ -135,7 +135,7 @@ export default function PageContent() {
                         <button className="btn btn-sm bg-orange-600 border border-orange-600 hover:bg-orange-500 text-white font-bold text-[1rem] md:ml-2 rounded-md">
                           Yes
                         </button>
-                        <button className="btn btn-sm hover:bg-gray-100 text-gray-500 font-bold text-[1rem] border border-gray-400 sm:mt-2 md:mt-0 md:ml-2 lg:ml-2 rounded-md">
+                        <button className="btn btn-sm bg-gray-100 hover:bg-gray-100 text-gray-500 font-bold text-[1rem] border border-gray-400 sm:mt-2 md:mt-0 md:ml-2 lg:ml-2 rounded-md">
                           Skip
                         </button>
                       </div>

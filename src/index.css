@@ -97,3 +97,21 @@ ul.myhome_dropdown li a, ul.search_dropdown li a, ul.inbox_dropdown li a, .inbox
         margin-top: 60px;
     }
 }
+
+/* Override DaisyUI active tab color */
+.tabs-lifted .tab::after {
+    background-color: white !important;
+    color: gray !important;
+}
+.tabs-lifted input[type='radio']{
+    background-color: white !important;
+}
+.tabs-lifted .tab::before {
+    background-color: white !important;
+    color: gray !important;
+    border-bottom: 2px solid #ccc !important;
+}
+
+.table tr{
+    border: none;
+}

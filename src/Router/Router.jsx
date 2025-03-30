@@ -31,6 +31,11 @@ import EditPartnerPreference from "../pages/Dashboard/EditPartnerPreference";
 import CommunicationSetting from "../pages/Dashboard/CommunicationSetting";
 import Settings from "../pages/Dashboard/Settings";
 import PrivacySettings from "../pages/Dashboard/PrivacySettings";
+import Logout from "../pages/Dashboard/Logout";
+import MembershipUpgrade from "../pages/MembershipUpgrade";
+import Login from "../pages/LogIn";
+import TermCondition from "../pages/TermCondition";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
 
 export const router = createBrowserRouter([
   {
@@ -45,6 +50,10 @@ export const router = createBrowserRouter([
       {
         path: "register",
         element: <Register></Register>,
+      },
+      {
+        path: "logout",
+        element: <Logout></Logout>
       },
       {
         path: "bangladeshibridegroom",
@@ -65,6 +74,22 @@ export const router = createBrowserRouter([
       {
         path: 'faq',
         element: <Faq></Faq>
+      },
+      {
+        path: 'membershipupgrade',
+        element: <MembershipUpgrade></MembershipUpgrade>
+      },
+      {
+        path: 'termcondition',
+        element: <TermCondition></TermCondition>
+      },
+      {
+        path: 'privacypolicy',
+        element: <PrivacyPolicy></PrivacyPolicy>
+      },
+      {
+        path: 'login',
+        element: <Login></Login>
       }
     ],
   },

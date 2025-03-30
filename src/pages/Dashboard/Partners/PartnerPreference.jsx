@@ -47,98 +47,98 @@ export default function PartnerPreference() {
           <table className="table">
             <tbody>
               {/* row 1 */}
-              <tr>
+              <tr className="border-b border-gray-300">
                 <td>Marital Status - Unmarried</td>
                 <td></td>
                 <td>
                   <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
                 </td>
               </tr>
-              <tr>
+              <tr className="border-b border-gray-300">
                 <td>Age - 21 to 26 Yrs</td>
                 <td></td>
                 <td>
                   <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
                 </td>
               </tr>
-              <tr>
+              <tr className="border-b border-gray-300">
                 <td>Height - 5 ft 8 in to 6 ft 2 in</td>
                 <td></td>
                 <td>
                   <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
                 </td>
               </tr>
-              <tr>
+              <tr className="border-b border-gray-300">
                 <td>Mother Tongue - Bengali</td>
                 <td></td>
                 <td>
                   <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
                 </td>
               </tr>
-              <tr>
+              <tr className="border-b border-gray-300">
                 <td>Physical Status - Normal</td>
                 <td></td>
                 <td>
                   <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
                 </td>
               </tr>
-              <tr>
+              <tr className="border-b border-gray-300">
                 <td>Eating Habits - Halal food always</td>
                 <td></td>
                 <td>
                   <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
                 </td>
               </tr>
-              <tr>
+              <tr className="border-b border-gray-300">
                 <td>Drinking Habits - Doesn't matter</td>
                 <td></td>
                 <td>
                   <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
                 </td>
               </tr>
-              <tr>
+              <tr className="border-b border-gray-300">
                 <td>Smoking Habits - Doesn't matter</td>
                 <td></td>
                 <td>
                   <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
                 </td>
               </tr>
-              <tr>
+              <tr className="border-b border-gray-300">
                 <td>Religion - Islam</td>
                 <td></td>
                 <td>
                   <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
                 </td>
               </tr>
-              <tr>
+              <tr className="border-b border-gray-300">
                 <td>Sect - Sunni</td>
                 <td></td>
                 <td>
                   <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
                 </td>
               </tr>
-              <tr>
+              <tr className="border-b border-gray-300">
                 <td>Education - Any</td>
                 <td></td>
                 <td>
                   <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
                 </td>
               </tr>
-              <tr>
+              <tr className="border-b border-gray-300">
                 <td>Occupation - Any</td>
                 <td></td>
                 <td>
                   <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
                 </td>
               </tr>
-              <tr>
+              <tr className="border-b border-gray-300">
                 <td>Citizenship - Any</td>
                 <td></td>
                 <td>
                   <FaCheckCircle className="text-2xl text-success"></FaCheckCircle>
                 </td>
               </tr>
-              <tr>
+              <tr className="border-b border-gray-300">
                 <td>Resident Status - Any</td>
                 <td></td>
                 <td>

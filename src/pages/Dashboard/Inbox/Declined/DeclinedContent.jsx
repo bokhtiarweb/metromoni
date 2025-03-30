@@ -19,9 +19,9 @@ export default function DeclinedContent() {
               </Tab>
             </div>
             <div>
-              <button className="btn btn-sm text-gray-500">Select All</button>
+              <button className="btn btn-sm bg-gray-300 border-gray-400 hover:bg-gray-400 hover:text-white hover:border-gray-400 text-gray-500">Select All</button>
               <span className="px-2">|</span>
-              <button className="btn btn-sm text-gray-500">Delete All</button>
+              <button className="btn btn-sm bg-gray-300 border-gray-400 hover:bg-gray-400 hover:text-white hover:border-gray-400 text-gray-500">Delete All</button>
             </div>
           </div>
         </TabList>
@@ -48,9 +48,6 @@ export default function DeclinedContent() {
         </TabPanel>
         <TabPanel>
           <div>
-            {/* <div className="mt-6 bg-gray-200 p-6 text-center text-gray-600 italic border rounded-md">
-              Currently there are no requests in this folder
-            </div> */}
             <div className="bg-base-300 shadow-lg p-4">
               <div className="flex justify-between items-center">
                 <input type="checkbox" className="checkbox checkbox-xs" />

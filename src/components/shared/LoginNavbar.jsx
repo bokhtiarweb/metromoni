@@ -18,21 +18,21 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-center hidden lg:flex"></div>
-      <div className="navbar-end gap-2">
+      <div className="navbar-end sm:w-full lg:w-[50%] gap-2 hidden sm:block">
         <div>
           <div className="flex gap-2">
             <label>
               <input
                 type="text"
                 placeholder="Matrimony ID / Email"
-                className="input input-bordered input-sm w-full max-w-xs"
+                className="input input-bordered input-sm bg-gray-100 w-full max-w-xs"
               />
             </label>
             <label>
               <input
                 type="password"
                 placeholder="password"
-                className="input input-bordered input-sm w-full max-w-xs"
+                className="input input-bordered input-sm bg-gray-100 w-full max-w-xs"
               />
             </label>
             <div>
@@ -41,19 +41,27 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-          <div className="flex justify-between w-4/5">
+          <div className="flex sm:gap-10 gap-14 w-5/6">
             <label className="cursor-pointer flex items-center gap-1">
-              <input
-                type="checkbox"
-                className="checkbox checkbox-xs"
-              />
-              <span className="text-sm font-semibold text-gray-400 ml-1">
+              <input type="checkbox" className="checkbox checkbox-xs checkbox-primary" />
+              <span className="xs:text-[12px] text-sm font-semibold text-gray-400 ml-1">
                 Keep me logged in{" "}
               </span>
             </label>
             <span className="text-sm font-semibold text-gray-400">
               <a href="#">Forgot password?</a>
             </span>
+          </div>
+        </div>
+      </div>
+      <div className="navbar-end gap-2 block sm:hidden">
+        <div className="flex justify-end gap-2">
+          <div>
+            <Link to={`/login`}>
+              <button className="btn btn-sm btn-success text-semibold text-white mr-2">
+                Log In
+              </button>
+            </Link>
           </div>
         </div>
       </div>

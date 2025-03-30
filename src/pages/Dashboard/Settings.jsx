@@ -546,40 +546,6 @@ export default function Settings() {
               <DeleteProfileModal Id={`my_delete_modal`}></DeleteProfileModal>
             </span>
           </div>
-
-          <div className="mt-4 space-y-2 border-t-2">
-            <span
-              className="flex items-center gap-2"
-              onClick={() =>
-                document.getElementById("my_helpcenter_modal").showModal()
-              }
-            >
-              24/7 Help Center
-              <HelpCenterModal Id={`my_helpcenter_modal`}></HelpCenterModal>
-            </span>
-            <span
-              className="flex items-center gap-2"
-              onClick={() =>
-                document.getElementById("my_termcondition_modal").showModal()
-              }
-            >
-              Terms & Conditions
-              <TermConditionmodal
-                Id={`my_termcondition_modal`}
-              ></TermConditionmodal>
-            </span>
-            <span
-              className="flex items-center gap-2"
-              onClick={() =>
-                document.getElementById("my_privacypolicy_modal").showModal()
-              }
-            >
-              Privacy Policy
-            </span>
-            <PrivacyPolicyModal
-              Id={`my_privacypolicy_modal`}
-            ></PrivacyPolicyModal>
-          </div>
         </div>
       </div>
     </>

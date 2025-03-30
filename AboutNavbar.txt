@@ -1,9 +1,0 @@
-How This Works
-useState(false) → Keeps track of whether the menu is fixed or not.
-useEffect Hook → Listens for scroll events.
-window.scrollY > 100 → When scrolled past 100px, the navbar gets a fixed position with a shadow effect.
-Tailwind Classes Used:
-fixed top-0 left-0 w-full → Makes the menu sticky at the top.
-shadow-md → Adds a shadow for better visibility.
-bg-white → Background turns white when fixed.
-transition-all duration-300 → Smooth transition effect.

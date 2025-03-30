@@ -1,8 +1,7 @@
 // Sidebar.jsx
 import React from "react";
-import { FaArrowUp, FaComment, FaMessage } from "react-icons/fa6";
+import { FaArrowUp, FaMessage } from "react-icons/fa6";
 import OnlineMember from "./OnlineMember";
-import { FaDotCircle } from "react-icons/fa";
 
 export default function Sidebar({ isOpen, setIsOpen }) {
   return (
@@ -51,10 +50,10 @@ export default function Sidebar({ isOpen, setIsOpen }) {
         />
         <select defaultValue="Pick a color" className="select select-xs max-w-28">
           <option>
-            <FaComment className="text-sm text-green-400"></FaComment>Online
+            Online
           </option>
           <option>
-            <FaDotCircle></FaDotCircle> Invisible
+            Invisible
           </option>
         </select>
       </div>

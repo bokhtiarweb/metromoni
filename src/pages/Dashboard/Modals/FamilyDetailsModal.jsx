@@ -17,7 +17,7 @@ export default function FamilyDetailsModal() {
     <>
       {/* You can open the modal using document.getElementById('ID').showModal() method */}
       <button
-        className="btn"
+        className="btn btn-warning"
         onClick={() => document.getElementById("my_modal_3").showModal()}
       >
         Click here to add your Family Details
