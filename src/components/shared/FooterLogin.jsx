@@ -7,10 +7,10 @@ export default function FooterLogin() {
         <footer className="footer text-neutral-content p-10 grid grid-cols-1 md:grid-cols-3 gap-6">
           <nav className="text-center md:text-left">
             <h6 className="text-xl font-semibold">
-              About BangladeshiMatrimony
+              About BMC
             </h6>
             <p className="mt-2">
-              BangladeshiMatrimony.com is the No.1 most trusted matrimony site
+              BMC.com is the No.1 most trusted matrimony site
               for Bangladeshi brides and grooms. Lakhs of members have
               successfully found their life partners here! Browse through our
               vast selection of profiles from all Religions{" "}
@@ -51,7 +51,7 @@ export default function FooterLogin() {
         <footer className="footer footer-center text-sm text-gray-200 p-4">
           <aside>
             <p>
-              Bangladeshimatrimony is part of GlobalMatrimony.com | Copyright ©
+              BMC is part of GlobalMatrimony.com | Copyright ©
               2025. All rights reserved.
             </p>
             <p className="font-bold mt-4">

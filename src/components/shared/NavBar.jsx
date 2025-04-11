@@ -18,8 +18,7 @@ export default function NavBar() {
             to={`/`}
             className="font-bold flex flex-col text-xl text-fuchsia-500"
           >
-            <span className="-mb-1 text-green-800">Bangladeshi</span>
-            <span className="-mt-1 text-red-600">Matrimony</span>
+            <span className="-mb-1 text-green-800">BMC</span>
           </Link>
         </div>
       </div>

@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function ProfileImageSlider() {
   return (
-    <div className="sm:w-fit lg:w-48 mx-auto p-4">
+    <div className="sm:w-48 w-48 mx-auto p-4">
       <Carousel
         showArrows={true}
         showThumbs={true}

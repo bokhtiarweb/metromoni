@@ -90,18 +90,18 @@ const testimonials = [
     id: 3,
     image:
       "https://imgs.bangladeshimatrimony.com/cbsimages/hp_new/AkibLily.jpg",
-    title: "Akib and Lily: Love Found on Bangladeshi Matrimony",
+    title: "Akib and Lily: Love Found on BMC",
     story:
-      "When Akib Abraham decided to settle down, he didn’t need to look any further; he joined Bangladeshi Matrimony to find...",
+      "When Akib Abraham decided to settle down, he didn’t need to look any further; he joined BMC to find...",
   },
   {
     id: 4,
     image:
       "https://imgs.bangladeshimatrimony.com/cbsimages/hp_new/AshaAbdur.jpg",
     title:
-      "When Bangladeshi Matrimony brought Asha Sarker & Abdur Rashid together",
+      "When BMC brought Asha Sarker & Abdur Rashid together",
     story:
-      "Seeing a Bangladeshi Matrimony ad by chance on Facebook led Abdur Rashid to find his soulmate for life. Within 15 days of signing up, he...",
+      "Seeing a BMC ad by chance on Facebook led Abdur Rashid to find his soulmate for life. Within 15 days of signing up, he...",
   },
 
   {
@@ -109,9 +109,9 @@ const testimonials = [
     image:
       "https://imgs.bangladeshimatrimony.com/cbsimages/hp_new/MdRedwanulIslamMinarSultana.jpg",
     title:
-      "Redwanul & Minar's swift journey from Bangladeshi Matrimony to forever!",
+      "Redwanul & Minar's swift journey from BMC to forever!",
     story:
-      "Md Redwanul Islam faced challenges finding a life partner until a friend suggested he register on Bangladeshi Matrimony. It was...",
+      "Md Redwanul Islam faced challenges finding a life partner until a friend suggested he register on BMC. It was...",
   },
 ];
 
@@ -264,7 +264,7 @@ export default function Home() {
       {/* Bangladeshi Matrimony Section */}
       <div className="bg-white py-12 px-4 sm:px-0">
         <div className="max-w-screen-lg mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl">Bangladeshi Matrimony</h2>
+          <h2 className="text-2xl sm:text-3xl">BMC</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
             <div>
               <img src={trustedImg} alt="" className="mx-auto w-32 sm:w-auto" />
@@ -294,7 +294,7 @@ export default function Home() {
             <div className="w-full sm:w-auto">
               <label className="form-control">
                 <span className="label-text">I'm looking for</span>
-                <select className="select select-bordered">
+                <select className="select select-bordered bg-gray-100">
                   <option disabled selected>
                     Bride
                   </option>
@@ -305,7 +305,7 @@ export default function Home() {
             <div className="w-full flex justify-center sm:w-auto sm:flex-row gap-4">
               <label className="form-control">
                 <span className="label-text">Age</span>
-                <select className="select select-bordered">
+                <select className="select select-bordered bg-gray-100">
                   <option disabled selected>
                     18
                   </option>
@@ -318,7 +318,7 @@ export default function Home() {
               </label>
               <label className="form-control">
                 <span className="label-text">To</span>
-                <select className="select select-bordered">
+                <select className="select select-bordered bg-gray-100">
                   <option disabled selected>
                     21
                   </option>
@@ -332,7 +332,7 @@ export default function Home() {
             <div className="w-full sm:w-auto">
               <label className="form-control">
                 <span className="label-text">Mother Tongue</span>
-                <select className="select select-bordered">
+                <select className="select select-bordered bg-gray-100">
                   <option disabled selected>
                     Bengali
                   </option>
@@ -342,7 +342,7 @@ export default function Home() {
                 </select>
               </label>
             </div>
-            <button className="btn btn-primary w-full sm:w-auto">Search</button>
+            <button className="btn btn-primary w-full mt-5 sm:w-auto">Search</button>
           </div>
         </div>
       </div>
@@ -385,7 +385,7 @@ export default function Home() {
       <div className="bg-white py-12 px-4 sm:px-0">
         <div className="max-w-screen-lg mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="text-center sm:text-left">
-            <h2 className="text-2xl sm:text-3xl">Bangladeshi Matrimony App</h2>
+            <h2 className="text-2xl sm:text-3xl">BMC App</h2>
             <p className="mt-2">Over 1 lakh+ installs</p>
             <p>Always stay up to date with faster & easier matchmaking</p>
             <p>Get 24/7 support and world-class user experience</p>
@@ -402,7 +402,7 @@ export default function Home() {
       {/* Testimonials Section */}
       <div className="py-16 bg-gray-100 px-4 sm:px-0">
         <h2 className="text-center text-2xl font-semibold text-blue-700">
-          Bangladeshi Matrimony - The No.1 choice for finding your life partner
+          BMC - The No.1 choice for finding your life partner
         </h2>
         <div className="max-w-4xl mx-auto mt-8">
           <Swiper slidesPerView={1} navigation loop modules={[Navigation]}>
